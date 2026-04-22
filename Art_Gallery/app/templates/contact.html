@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% set lang_code = session['language'] if 'language' in session else 'en_IE' %}
+
+{% block hero %}
+<section class="page-section clearfix">
+    <div class="container">
+        <h2 class="text-center mb-4">
+            {% if lang_code == 'en_IE' %}Contact Us
+            {% elif lang_code == 'zh_CN' %}联系我们
+            {% elif lang_code == 'ja_JP' %}お問い合わせ
+            {% endif %}
+        </h2>
+    </div>
+</section>
+{% endblock %}
+
+{% block main %}
+<section class="page-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            {% if lang_code == 'en_IE' %}Name
+                            {% elif lang_code == 'zh_CN' %}姓名
+                            {% elif lang_code == 'ja_JP' %}お名前
+                            {% endif %}
+                        </label>
+                        <input type="text" class="form-control" id="name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            {% if lang_code == 'en_IE' %}Email
+                            {% elif lang_code == 'zh_CN' %}电子邮件
+                            {% elif lang_code == 'ja_JP' %}メールアドレス
+                            {% endif %}
+                        </label>
+                        <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">
+                            {% if lang_code == 'en_IE' %}Message
+                            {% elif lang_code == 'zh_CN' %}留言
+                            {% elif lang_code == 'ja_JP' %}メッセージ
+                            {% endif %}
+                        </label>
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        {% if lang_code == 'en_IE' %}Send
+                        {% elif lang_code == 'zh_CN' %}发送
+                        {% elif lang_code == 'ja_JP' %}送信
+                        {% endif %}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

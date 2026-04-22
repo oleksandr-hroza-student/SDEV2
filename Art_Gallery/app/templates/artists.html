@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% set lang_code = session['language'] if 'language' in session else 'en_IE' %}
+
+{% block hero %}
+<section class="page-section clearfix">
+    <div class="container">
+        <h2 class="text-center mb-4">
+            {% if lang_code == 'en_IE' %}Artists
+            {% elif lang_code == 'zh_CN' %}艺术家
+            {% elif lang_code == 'ja_JP' %}アーティスト
+            {% endif %}
+        </h2>
+    </div>
+</section>
+{% endblock %}
+
+{% block main %}
+<section class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center text-muted py-5">
+                <p>
+                    {% if lang_code == 'en_IE' %}Artist profiles coming soon.
+                    {% elif lang_code == 'zh_CN' %}艺术家简介即将推出。
+                    {% elif lang_code == 'ja_JP' %}アーティストのプロフィールは近日公開予定です。
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

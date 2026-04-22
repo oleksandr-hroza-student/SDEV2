@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% set lang_code = session['language'] if 'language' in session else 'en_IE' %}
+
+{% block hero %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro text-center">
+            <h2 class="intro-heading mb-4">
+                {% if lang_code == 'en_IE' %}Welcome to the Global Art Gallery
+                {% elif lang_code == 'zh_CN' %}欢迎来到全球艺术画廊
+                {% elif lang_code == 'ja_JP' %}グローバルアートギャラリーへようこそ
+                {% endif %}
+            </h2>
+            <p class="intro-lead-in mb-4">
+                {% if lang_code == 'en_IE' %}Celebrating art and culture from around the world.
+                {% elif lang_code == 'zh_CN' %}庆祝来自世界各地的艺术与文化。
+                {% elif lang_code == 'ja_JP' %}世界中のアートと文化を讃えています。
+                {% endif %}
+            </p>
+            <a class="btn btn-primary btn-lg" href="/gallery">
+                {% if lang_code == 'en_IE' %}Explore Gallery
+                {% elif lang_code == 'zh_CN' %}探索画廊
+                {% elif lang_code == 'ja_JP' %}ギャラリーを探索
+                {% endif %}
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block main %}
+{% endblock %}

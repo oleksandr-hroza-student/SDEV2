@@ -27,4 +27,4 @@ babel.init_app(app, locale_selector=get_locale)
 
 
 # Import routes
-from app import routes
+from . import routes
