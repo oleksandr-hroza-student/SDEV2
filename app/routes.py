@@ -34,13 +34,24 @@ def index():
 
 
 @app.route('/gallery')
+@app.route('/art')
 def gallery():
-    return render_template("gallery.html")
+    return render_template("art.html")
 
 
 @app.route('/artists')
 def artists():
     return render_template("artists.html")
+
+
+@app.route('/events')
+def events():
+    return render_template("events.html")
+
+
+@app.route('/submit')
+def submit():
+    return render_template("submit.html")
 
 
 @app.route('/contact')
