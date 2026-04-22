@@ -1,0 +1,437 @@
+# Chinese (Simplified) translations for Global Art Gallery
+msgid ""
+msgstr ""
+"Project-Id-Version: Global Art Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 12:49+0100\n"
+"PO-Revision-Date: 2026-04-22 00:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/artists.html:6
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:57
+msgid "Artists"
+msgstr "艺术家"
+
+# --- artists.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/artists.html:16
+msgid "Artist profiles coming soon."
+msgstr "艺术家简介即将推出。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:10
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:40
+msgid "Global Art Gallery"
+msgstr "全球艺术画廊"
+
+# --- base.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:38
+msgid "Experience Art Through Irish Perspective"
+msgstr "通过中国视角体验艺术"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:48
+msgid "Art Gallery"
+msgstr "艺术画廊"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:55
+msgid "Home"
+msgstr "首页"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:56
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/gallery.html:6
+msgid "Gallery"
+msgstr "画廊"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:58
+msgid "Contact"
+msgstr "联系"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:59
+msgid "Submit Work"
+msgstr "提交作品"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:64
+msgid "Language"
+msgstr "语言"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:89
+msgid "© 2026 Global Art Gallery"
+msgstr "© 2026 全球艺术画廊"
+
+# --- contact.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:7
+msgid "Contact Us"
+msgstr "联系我们"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:8
+msgid ""
+"Reach out with questions, partnership enquiries, artwork support "
+"requests, or media enquiries."
+msgstr "如有疑问、合作咨询、作品提交支持请求或媒体问询，欢迎通过此处联系我们。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:21
+msgid "Name"
+msgstr "姓名"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:25
+msgid "Email"
+msgstr "电子邮件"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:29
+msgid "Reason for Contact"
+msgstr "联系原因"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:31
+msgid "Select a reason..."
+msgstr "请选择原因..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:32
+msgid "General enquiry"
+msgstr "一般咨询"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:33
+msgid "Artwork submission support"
+msgstr "作品提交支持"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:34
+msgid "Partnership or collaboration"
+msgstr "合作或联名"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:35
+msgid "Press or media enquiry"
+msgstr "媒体或新闻咨询"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:36
+msgid "Events and exhibitions"
+msgstr "活动与展览"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:37
+msgid "Technical issue"
+msgstr "技术问题"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:38
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:94
+msgid "Other"
+msgstr "其他"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:42
+msgid "If Other, Please Specify"
+msgstr "如选其他，请说明"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:44
+msgid "Add a short subject or purpose"
+msgstr "请填写简短主题或目的"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:47
+msgid "Message"
+msgstr "留言"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:49
+msgid "Tell us how we can help..."
+msgstr "请告诉我们您需要什么帮助..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:51
+msgid "Send"
+msgstr "发送"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:58
+msgid "Contact Information"
+msgstr "联系信息"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:59
+msgid "Hours of Operation:"
+msgstr "服务时间:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:59
+msgid "Monday to Friday, 9:00 AM to 5:30 PM"
+msgstr "周一至周五，上午 9:00 至下午 5:30"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:60
+msgid "Expected Response Time:"
+msgstr "预计回复时间:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:60
+msgid "We aim to respond to calls and emails within 1 to 2 business days."
+msgstr "我们力求在 1 到 2 个工作日内回复电话和电子邮件。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:61
+msgid "Phone:"
+msgstr "电话:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:62
+msgid "Email:"
+msgstr "电子邮件:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:68
+msgid "Social Media"
+msgstr "社交媒体"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:70
+msgid "Instagram"
+msgstr "Instagram"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:71
+msgid "Facebook"
+msgstr "Facebook"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:72
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:79
+msgid "Helpful Resources"
+msgstr "有用资源"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:80
+msgid "While you wait, these pages may answer common questions."
+msgstr "等待回复期间，这些页面或许可以解答常见问题。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:82
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:26
+msgid "View FAQs"
+msgstr "查看常见问题"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:83
+msgid "Artwork Submission Guide"
+msgstr "作品提交指南"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:84
+msgid "Current Exhibitions"
+msgstr "当前展览"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:7
+msgid "Frequently Asked Questions"
+msgstr "常见问题"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:8
+msgid "Quick answers to common visitor, artist, and submission questions."
+msgstr "快速解答访客、艺术家和投稿相关的常见问题。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:23
+msgid "How long does it take to receive a reply?"
+msgstr "多久可以收到回复？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:28
+msgid ""
+"We usually respond within 1 to 2 business days. Messages sent outside "
+"office hours are handled on the next working day."
+msgstr "我们通常会在 1 到 2 个工作日内回复。非办公时间发送的消息将在下一个工作日处理。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:35
+msgid "What should I include in an artwork submission?"
+msgstr "作品提交时应包含哪些内容？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:40
+msgid ""
+"Please include your contact details, artwork title, medium, year, "
+"description, and at least one clear image. A portfolio and CV/resume can "
+"also be attached."
+msgstr "请附上您的联系方式、作品标题、媒介、创作年份、作品描述，以及至少一张清晰图片。也可以附上作品集和简历。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:47
+msgid "Can I contact the gallery about partnerships or events?"
+msgstr "我可以就合作或活动事宜联系画廊吗？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:52
+msgid ""
+"Yes. Choose the partnership, collaboration, or events option in the "
+"contact form and include the relevant dates, audience, and proposal "
+"details."
+msgstr "可以。请在联系表单中选择合作、联名或活动选项，并填写相关日期、受众和提案细节。"
+
+# --- contact.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:59
+msgid "Contact the Team"
+msgstr "联系团队"
+
+# --- gallery.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/gallery.html:16
+msgid "Gallery content coming soon."
+msgstr "画廊内容即将推出。"
+
+# --- index.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:7
+msgid "Welcome to the Global Art Gallery"
+msgstr "欢迎来到全球艺术画廊"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:8
+msgid "Celebrating art and culture from around the world."
+msgstr "庆祝来自世界各地的艺术与文化。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:9
+msgid "Explore Gallery"
+msgstr "探索画廊"
+
+# --- submit.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:7
+msgid "Submit Your Artwork"
+msgstr "提交您的艺术作品"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:8
+msgid ""
+"Fill in the form below. Our team will review your submission and be in "
+"touch."
+msgstr "请填写以下表格。我们的团队将审核您的提交并与您联系。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:22
+msgid ""
+"Thank you! Your submission has been received. We will review it and get "
+"back to you."
+msgstr "谢谢！我们已收到您的提交，将尽快审核并与您联系。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:33
+msgid "Artist Information"
+msgstr "艺术家信息"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:37
+msgid "Full Name *"
+msgstr "全名 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:41
+msgid "Email Address *"
+msgstr "电子邮件地址 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:47
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:49
+msgid "Enter your contact number"
+msgstr "请输入您的联系电话"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:53
+msgid "Artist Statement"
+msgstr "艺术家陈述"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:55
+msgid "Tell us about yourself and your artistic background..."
+msgstr "介绍一下您自己和您的艺术背景..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:59
+msgid "Artist Portfolio"
+msgstr "艺术家作品集"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:62
+msgid ""
+"Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: "
+"20MB."
+msgstr "选填 — 上传您的作品集 PDF、ZIP 或图片文件。最大大小：20MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:66
+msgid "Artist CV / Resume"
+msgstr "艺术家简历 / 履历"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:69
+msgid "Optional — upload your CV or resume in PDF or Word format. Max size: 10MB."
+msgstr "选填 — 请上传 PDF 或 Word 格式的简历。最大大小：10MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:75
+msgid "Artwork Details"
+msgstr "作品详情"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:78
+msgid "Artwork Title *"
+msgstr "作品标题 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:84
+msgid "Medium / Type *"
+msgstr "媒介 / 类型 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:86
+msgid "Select a medium..."
+msgstr "选择媒介..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:87
+msgid "Painting"
+msgstr "绘画"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:88
+msgid "Sculpture"
+msgstr "雕塑"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:89
+msgid "Photography"
+msgstr "摄影"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:90
+msgid "Digital Art"
+msgstr "数字艺术"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:91
+msgid "Printmaking"
+msgstr "版画"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:92
+msgid "Textile / Fibre"
+msgstr "纺织 / 纤维"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:93
+msgid "Mixed Media"
+msgstr "混合媒介"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:98
+msgid "Year Created *"
+msgstr "创作年份 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:105
+msgid "Description / Concept *"
+msgstr "描述 / 创作概念 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:107
+msgid "Describe the artwork, its inspiration, and meaning..."
+msgstr "描述作品、其灵感来源和含义..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:112
+msgid "Upload Artwork Image *"
+msgstr "上传作品图片 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:115
+msgid "Accepted formats: JPG, PNG, WEBP. Max size: 10MB."
+msgstr "支持格式：JPG、PNG、WEBP。最大大小：10MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:125
+msgid ""
+"I confirm that this is my original work and I consent to the gallery "
+"reviewing it for potential display. *"
+msgstr "我确认这是我的原创作品，并同意画廊对其进行审核以考虑展示。*"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:132
+msgid "Clear Form"
+msgstr "清除表格"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:135
+msgid "Submit for Review"
+msgstr "提交审核"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:7
+msgid "Thank You"
+msgstr "谢谢您"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:8
+msgid "Your enquiry has been received."
+msgstr "我们已收到您的咨询。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:21
+msgid "We will be in touch soon"
+msgstr "我们会尽快与您联系"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:22
+msgid ""
+"Thank you for contacting Global Art Gallery. Our team reviews enquiries "
+"during business hours and usually replies within 1 to 2 business days."
+msgstr "感谢您联系全球艺术画廊。我们的团队会在办公时间处理咨询，通常会在 1 到 2 个工作日内回复。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:23
+msgid ""
+"If your question is urgent, you can also contact us by phone during our "
+"office hours or use the resources below."
+msgstr "如果您的问题较为紧急，也可以在办公时间拨打电话联系我们，或使用下面的资源。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:25
+msgid "Back to Contact"
+msgstr "返回联系页面"

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mb-2">{{ _('Frequently Asked Questions') }}</h2>
+            <p class="text-muted">{{ _('Quick answers to common visitor, artist, and submission questions.') }}</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block main %}
+<section class="page-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqOneHeading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                {{ _('How long does it take to receive a reply?') }}
+                            </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ _('We usually respond within 1 to 2 business days. Messages sent outside office hours are handled on the next working day.') }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqTwoHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                {{ _('What should I include in an artwork submission?') }}
+                            </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ _('Please include your contact details, artwork title, medium, year, description, and at least one clear image. A portfolio and CV/resume can also be attached.') }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqThreeHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                {{ _('Can I contact the gallery about partnerships or events?') }}
+                            </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                {{ _('Yes. Choose the partnership, collaboration, or events option in the contact form and include the relevant dates, audience, and proposal details.') }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a class="btn btn-primary px-4" href="/contact">{{ _('Contact the Team') }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

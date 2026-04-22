@@ -1,0 +1,437 @@
+# Japanese translations for Global Art Gallery
+msgid ""
+msgstr ""
+"Project-Id-Version: Global Art Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 12:49+0100\n"
+"PO-Revision-Date: 2026-04-22 00:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja_JP\n"
+"Language-Team: ja_JP <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/artists.html:6
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:57
+msgid "Artists"
+msgstr "アーティスト"
+
+# --- artists.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/artists.html:16
+msgid "Artist profiles coming soon."
+msgstr "アーティストのプロフィールは近日公開予定です。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:10
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:40
+msgid "Global Art Gallery"
+msgstr "グローバルアートギャラリー"
+
+# --- base.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:38
+msgid "Experience Art Through Irish Perspective"
+msgstr "日本の視点で芸術を体験"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:48
+msgid "Art Gallery"
+msgstr "アートギャラリー"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:55
+msgid "Home"
+msgstr "ホーム"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:56
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/gallery.html:6
+msgid "Gallery"
+msgstr "ギャラリー"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:58
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:59
+msgid "Submit Work"
+msgstr "作品応募"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:64
+msgid "Language"
+msgstr "言語"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/base.html:89
+msgid "© 2026 Global Art Gallery"
+msgstr "© 2026 グローバルアートギャラリー"
+
+# --- contact.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:7
+msgid "Contact Us"
+msgstr "お問い合わせ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:8
+msgid ""
+"Reach out with questions, partnership enquiries, artwork support "
+"requests, or media enquiries."
+msgstr "ご質問、提携に関するお問い合わせ、作品応募のサポート依頼、またはメディア関連のお問い合わせはこちらからご連絡ください。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:21
+msgid "Name"
+msgstr "お名前"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:25
+msgid "Email"
+msgstr "メールアドレス"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:29
+msgid "Reason for Contact"
+msgstr "お問い合わせの理由"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:31
+msgid "Select a reason..."
+msgstr "理由を選択してください..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:32
+msgid "General enquiry"
+msgstr "一般的なお問い合わせ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:33
+msgid "Artwork submission support"
+msgstr "作品応募サポート"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:34
+msgid "Partnership or collaboration"
+msgstr "提携またはコラボレーション"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:35
+msgid "Press or media enquiry"
+msgstr "報道またはメディアのお問い合わせ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:36
+msgid "Events and exhibitions"
+msgstr "イベントと展覧会"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:37
+msgid "Technical issue"
+msgstr "技術的な問題"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:38
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:94
+msgid "Other"
+msgstr "その他"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:42
+msgid "If Other, Please Specify"
+msgstr "その他の場合は内容をご記入ください"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:44
+msgid "Add a short subject or purpose"
+msgstr "件名または目的を簡潔にご記入ください"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:47
+msgid "Message"
+msgstr "メッセージ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:49
+msgid "Tell us how we can help..."
+msgstr "どのようなお手伝いが必要かご記入ください..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:51
+msgid "Send"
+msgstr "送信"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:58
+msgid "Contact Information"
+msgstr "連絡先情報"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:59
+msgid "Hours of Operation:"
+msgstr "対応時間:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:59
+msgid "Monday to Friday, 9:00 AM to 5:30 PM"
+msgstr "月曜日から金曜日、午前9時から午後5時30分まで"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:60
+msgid "Expected Response Time:"
+msgstr "返信予定時間:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:60
+msgid "We aim to respond to calls and emails within 1 to 2 business days."
+msgstr "お電話やメールには1〜2営業日以内の返信を目指しています。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:61
+msgid "Phone:"
+msgstr "電話:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:62
+msgid "Email:"
+msgstr "メール:"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:68
+msgid "Social Media"
+msgstr "ソーシャルメディア"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:70
+msgid "Instagram"
+msgstr "インスタグラム"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:71
+msgid "Facebook"
+msgstr "フェイスブック"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:72
+msgid "LinkedIn"
+msgstr "リンクトイン"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:79
+msgid "Helpful Resources"
+msgstr "役立つリソース"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:80
+msgid "While you wait, these pages may answer common questions."
+msgstr "お待ちいただく間に、これらのページでよくある質問への回答をご確認いただけます。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:82
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:26
+msgid "View FAQs"
+msgstr "よくある質問を見る"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:83
+msgid "Artwork Submission Guide"
+msgstr "作品応募ガイド"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/contact.html:84
+msgid "Current Exhibitions"
+msgstr "現在の展覧会"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:7
+msgid "Frequently Asked Questions"
+msgstr "よくある質問"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:8
+msgid "Quick answers to common visitor, artist, and submission questions."
+msgstr "来場者、アーティスト、作品応募に関するよくある質問への簡潔な回答です。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:23
+msgid "How long does it take to receive a reply?"
+msgstr "返信を受け取るまでどのくらいかかりますか？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:28
+msgid ""
+"We usually respond within 1 to 2 business days. Messages sent outside "
+"office hours are handled on the next working day."
+msgstr "通常は1〜2営業日以内に返信します。営業時間外に送信されたメッセージは翌営業日に対応します。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:35
+msgid "What should I include in an artwork submission?"
+msgstr "作品応募には何を含めるべきですか？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:40
+msgid ""
+"Please include your contact details, artwork title, medium, year, "
+"description, and at least one clear image. A portfolio and CV/resume can "
+"also be attached."
+msgstr "連絡先、作品タイトル、素材、制作年、説明、および鮮明な画像を少なくとも1点含めてください。ポートフォリオや職務経歴書も添付できます。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:47
+msgid "Can I contact the gallery about partnerships or events?"
+msgstr "提携やイベントについてギャラリーに連絡できますか？"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:52
+msgid ""
+"Yes. Choose the partnership, collaboration, or events option in the "
+"contact form and include the relevant dates, audience, and proposal "
+"details."
+msgstr "はい。お問い合わせフォームで提携、コラボレーション、またはイベントの項目を選択し、関連日程、対象者、提案内容の詳細をご記入ください。"
+
+# --- contact.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/faq.html:59
+msgid "Contact the Team"
+msgstr "チームに連絡する"
+
+# --- gallery.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/gallery.html:16
+msgid "Gallery content coming soon."
+msgstr "ギャラリーのコンテンツは近日公開予定です。"
+
+# --- index.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:7
+msgid "Welcome to the Global Art Gallery"
+msgstr "グローバルアートギャラリーへようこそ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:8
+msgid "Celebrating art and culture from around the world."
+msgstr "世界中のアートと文化を讃えています。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/index.html:9
+msgid "Explore Gallery"
+msgstr "ギャラリーを探索"
+
+# --- submit.html ---
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:7
+msgid "Submit Your Artwork"
+msgstr "作品を応募する"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:8
+msgid ""
+"Fill in the form below. Our team will review your submission and be in "
+"touch."
+msgstr "以下のフォームにご記入ください。担当者が内容を確認してご連絡いたします。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:22
+msgid ""
+"Thank you! Your submission has been received. We will review it and get "
+"back to you."
+msgstr "ありがとうございます！応募を受け付けました。内容を確認後、ご連絡いたします。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:33
+msgid "Artist Information"
+msgstr "アーティスト情報"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:37
+msgid "Full Name *"
+msgstr "氏名 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:41
+msgid "Email Address *"
+msgstr "メールアドレス *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:47
+msgid "Phone Number"
+msgstr "電話番号"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:49
+msgid "Enter your contact number"
+msgstr "連絡先電話番号を入力してください"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:53
+msgid "Artist Statement"
+msgstr "アーティストステートメント"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:55
+msgid "Tell us about yourself and your artistic background..."
+msgstr "ご自身とあなたの芸術的な背景についてご紹介ください..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:59
+msgid "Artist Portfolio"
+msgstr "アーティストポートフォリオ"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:62
+msgid ""
+"Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: "
+"20MB."
+msgstr "任意 — ポートフォリオのPDF、ZIP、または画像ファイルをアップロードしてください。最大サイズ：20MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:66
+msgid "Artist CV / Resume"
+msgstr "アーティストの職務経歴書 / 履歴書"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:69
+msgid "Optional — upload your CV or resume in PDF or Word format. Max size: 10MB."
+msgstr "任意 — PDFまたはWord形式の職務経歴書をアップロードしてください。最大サイズ：10MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:75
+msgid "Artwork Details"
+msgstr "作品詳細"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:78
+msgid "Artwork Title *"
+msgstr "作品タイトル *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:84
+msgid "Medium / Type *"
+msgstr "素材 / ジャンル *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:86
+msgid "Select a medium..."
+msgstr "素材を選択..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:87
+msgid "Painting"
+msgstr "絵画"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:88
+msgid "Sculpture"
+msgstr "彫刻"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:89
+msgid "Photography"
+msgstr "写真"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:90
+msgid "Digital Art"
+msgstr "デジタルアート"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:91
+msgid "Printmaking"
+msgstr "版画"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:92
+msgid "Textile / Fibre"
+msgstr "テキスタイル"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:93
+msgid "Mixed Media"
+msgstr "ミクストメディア"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:98
+msgid "Year Created *"
+msgstr "制作年 *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:105
+msgid "Description / Concept *"
+msgstr "説明 / コンセプト *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:107
+msgid "Describe the artwork, its inspiration, and meaning..."
+msgstr "作品、インスピレーション、意味についてご説明ください..."
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:112
+msgid "Upload Artwork Image *"
+msgstr "作品画像をアップロード *"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:115
+msgid "Accepted formats: JPG, PNG, WEBP. Max size: 10MB."
+msgstr "対応形式：JPG、PNG、WEBP。最大サイズ：10MB。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:125
+msgid ""
+"I confirm that this is my original work and I consent to the gallery "
+"reviewing it for potential display. *"
+msgstr "これが私のオリジナル作品であることを確認し、ギャラリーによる審査に同意します。*"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:132
+msgid "Clear Form"
+msgstr "フォームをクリア"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/submit.html:135
+msgid "Submit for Review"
+msgstr "審査に応募"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:7
+msgid "Thank You"
+msgstr "ありがとうございます"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:8
+msgid "Your enquiry has been received."
+msgstr "お問い合わせを受け付けました。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:21
+msgid "We will be in touch soon"
+msgstr "近日中にご連絡いたします"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:22
+msgid ""
+"Thank you for contacting Global Art Gallery. Our team reviews enquiries "
+"during business hours and usually replies within 1 to 2 business days."
+msgstr "Global Art Gallery へお問い合わせいただきありがとうございます。担当チームが営業時間内に内容を確認し、通常1〜2営業日以内に返信いたします。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:23
+msgid ""
+"If your question is urgent, you can also contact us by phone during our "
+"office hours or use the resources below."
+msgstr "お急ぎの場合は、営業時間内にお電話いただくか、以下のリソースもご利用ください。"
+
+#: C:/Users/rosha/SDEVGP2/Art_Gallery/app/templates/thank_you.html:25
+msgid "Back to Contact"
+msgstr "お問い合わせページに戻る"
