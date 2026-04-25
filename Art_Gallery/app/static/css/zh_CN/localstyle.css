@@ -1,0 +1,66 @@
+:root {
+    /* China: collectivist and higher PD -> stronger hierarchy, formal and structured expression */
+    --site-bg: #f6f2ee;
+    --surface: #fffdf9;
+    --surface-muted: #f0e8df;
+    --text: #2b211d;
+    --text-muted: #64554c;
+    --line: #d8c9bd;
+    --brand: #8e2a2a;
+    --brand-contrast: #fffdf8;
+
+    --radius: 6px;
+    --font-body: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+    --font-heading: "STSong", "SimSun", "Noto Serif SC", serif;
+}
+
+.site-heading {
+    margin: 2.3rem 0 1.5rem;
+}
+
+.site-heading-upper {
+    letter-spacing: 0.08em;
+}
+
+.site-heading-lower {
+    font-size: clamp(2.1rem, 4vw, 3.35rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.navbar .nav-link {
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    padding: 0.45rem 0.85rem !important;
+    border-radius: 4px;
+    transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.navbar.bg-dark {
+    border-top: 2px solid color-mix(in srgb, var(--brand) 45%, #ffffff);
+}
+
+.navbar .navbar-nav {
+    gap: 0.15rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    background: color-mix(in srgb, var(--brand) 12%, #ffffff);
+}
+
+.navbar .nav-link.is-active,
+.navbar .dropdown-toggle.is-active {
+    background: var(--brand);
+    color: var(--brand-contrast) !important;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.page-section {
+    padding-top: 2.35rem;
+    padding-bottom: 2.35rem;
+}

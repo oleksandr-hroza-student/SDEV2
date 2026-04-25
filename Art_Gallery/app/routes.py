@@ -68,6 +68,16 @@ def faq():
     return render_template("faq.html")
 
 
+@app.route('/events')
+def events():
+    return render_template("events.html")
+
+
+@app.route('/art')
+def art():
+    return render_template("art.html")
+
+
 # -------------------------------
 # Artwork Submission Route
 # -------------------------------

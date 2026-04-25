@@ -9,8 +9,29 @@
             <a class="btn btn-primary btn-lg" href="/gallery">{{ _('Explore Gallery') }}</a>
         </div>
     </div>
-</section>
-{% endblock %}
+      </section>
+      {% endblock %}
 
-{% block main %}
-{% endblock %}
+      {% block main %}
+      <section class="page-section">
+        <div class="container">
+          <h3 class="text-center mb-4">{{ _('Featured Preview') }}</h3>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="/static/assets/img/tree1.png" alt="Tree artwork 1" />
+              <p>{{ _('Brief description of the first image goes here.') }}</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="/static/assets/img/tree2.png" alt="Tree artwork 2" />
+              <p>{{ _('Brief description of the second image goes here.') }}</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="/static/assets/img/tree2.png" alt="Tree artwork 3" />
+              <p>{{ _('Brief description of the third image goes here.') }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endblock %}

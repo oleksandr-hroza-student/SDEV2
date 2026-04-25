@@ -1,0 +1,49 @@
+:root {
+	/* Ireland: higher individualism, lower power distance -> more personal, open UI tone */
+	--site-bg: #f7f6f1;
+	--surface: #ffffff;
+	--surface-muted: #eef4f0;
+	--text: #1f2a28;
+	--text-muted: #4d5f5c;
+	--line: #cfdad6;
+	--brand: #1f6f5f;
+	--brand-contrast: #ffffff;
+
+	--radius: 10px;
+	--font-body: "Raleway", "Segoe UI", sans-serif;
+	--font-heading: "Lora", Georgia, serif;
+}
+
+.site-heading-upper {
+	letter-spacing: 0.16em;
+}
+
+.navbar .nav-link {
+	font-weight: 600;
+	border-radius: 999px;
+	padding: 0.42rem 0.82rem !important;
+	font-size: 0.95rem;
+	letter-spacing: 0.03em;
+	white-space: nowrap;
+	transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.navbar .navbar-nav {
+	gap: 0.2rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+	background: color-mix(in srgb, var(--brand) 12%, #ffffff);
+	transform: translateY(-1px);
+}
+
+.navbar .nav-link.is-active,
+.navbar .dropdown-toggle.is-active {
+	background: color-mix(in srgb, var(--brand) 20%, #ffffff);
+	color: var(--brand) !important;
+}
+
+.btn {
+	border-radius: 999px;
+}

@@ -1,41 +1,27 @@
-from datetime import timedelta
 from flask import Flask, session, request
 from flask_babel import Babel
 
-# Create Flask app
+# This will set the language variable in session for the Babel app.
+# If no language is set in session, return the best browser match.
+def get_locale():
+    if 'language' in session:
+        if session['language'] == 'zh_CN':
+            return 'zh_Hans_CN'
+        return session['language']
+    return request.accept_languages.best_match(['en_IE', 'zh_Hans_CN', 'ja_JP'])
+
+
+# Create the Flask app
 app = Flask(__name__)
 
-# Secret key for session handling
+# Session language uses secret key
 app.secret_key = 'a secret key'
 
-# Session settings — keep cookie alive and compatible with redirects
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=30)
-app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
-# Supported languages (match your base.html)
-LANGUAGES = ['en_IE', 'zh_CN', 'ja_JP']
+# Hook Babel into the app
+babel = Babel(app)
 
-
-# Map session language codes to Babel locale identifiers
-LOCALE_MAP = {
-    'en_IE': 'en_IE',
-    'zh_CN': 'zh_Hans_CN',  # Babel normalizes zh_CN to zh_Hans_CN
-    'ja_JP': 'ja_JP',
-}
-
-
-# Locale selector for Babel
-def get_locale():
-    # If user selected a language, use it
-    if 'language' in session:
-        return LOCALE_MAP.get(session['language'], session['language'])
-
-    # Otherwise detect from browser
-    return request.accept_languages.best_match(LANGUAGES)
-
-
-# Initialize Babel
-babel = Babel()
+# Initialize Babel locale selector
 babel.init_app(app, locale_selector=get_locale)
 
 

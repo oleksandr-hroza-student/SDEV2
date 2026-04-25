@@ -1,0 +1,73 @@
+:root {
+    /* Japan: collectivist and moderate/high PD -> orderly, quiet hierarchy, refined restraint */
+    --site-bg: #f4f1eb;
+    --surface: #fbfaf8;
+    --surface-muted: #efebe4;
+    --text: #252220;
+    --text-muted: #5f5750;
+    --line: #d8d0c6;
+    --brand: #4b4037;
+    --brand-contrast: #fffefb;
+
+    --radius: 6px;
+    --font-body: "Yu Gothic UI", "Meiryo", "Noto Sans JP", sans-serif;
+    --font-heading: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+.site-heading {
+    margin: 2.2rem 0 1.4rem;
+}
+
+.site-heading-upper {
+    letter-spacing: 0.1em;
+}
+
+.site-heading-lower {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.navbar .nav-link {
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    padding: 0.42rem 0.8rem !important;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar .navbar-nav {
+    gap: 0.2rem;
+}
+
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-item + .nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 55%;
+    width: 1px;
+    background: color-mix(in srgb, var(--line) 90%, #ffffff);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    background: color-mix(in srgb, var(--brand) 9%, #ffffff);
+}
+
+.navbar .nav-link.is-active,
+.navbar .dropdown-toggle.is-active {
+    background: color-mix(in srgb, var(--brand) 14%, #ffffff);
+    color: var(--brand) !important;
+}
+
+.page-section {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
