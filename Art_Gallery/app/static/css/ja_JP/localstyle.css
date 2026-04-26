@@ -1,73 +1,103 @@
-:root {
-    /* Japan: collectivist and moderate/high PD -> orderly, quiet hierarchy, refined restraint */
-    --site-bg: #f4f1eb;
-    --surface: #fbfaf8;
-    --surface-muted: #efebe4;
-    --text: #252220;
-    --text-muted: #5f5750;
-    --line: #d8d0c6;
-    --brand: #4b4037;
-    --brand-contrast: #fffefb;
+/* =========================================
+   [untitled] Gallery - JP local base styles
+   Palette: warm beige, charcoal, stone
+   Fonts: DM Serif Display + DM Sans
+   ========================================= */
 
-    --radius: 6px;
-    --font-body: "Yu Gothic UI", "Meiryo", "Noto Sans JP", sans-serif;
-    --font-heading: "Yu Mincho", "Hiragino Mincho ProN", serif;
+:root {
+    --bg: #f4efe8;
+    --bg-warm: #ede7dd;
+    --bg-card: #faf7f3;
+    --line: #d8cfc3;
+    --text: #2a2420;
+    --text-mid: #6b5f55;
+    --text-dim: #9e9188;
+    --accent: #3a2e28;
+    --gold: #8c7355;
+    --white: #fffdf9;
+
+    --radius: 4px;
+    --transition: 0.22s ease;
+    --max-w: 1160px;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Header text in current base.html */
 .site-heading {
-    margin: 2.2rem 0 1.4rem;
+    margin: 2.5rem 0 1.5rem;
 }
 
 .site-heading-upper {
-    letter-spacing: 0.1em;
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold) !important;
 }
 
 .site-heading-lower {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 500;
+    display: block;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    font-weight: 400;
     line-height: 1.1;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
+    color: var(--text);
 }
 
+/* Bootstrap navbar used in current base.html */
+.navbar.bg-dark {
+    background: var(--bg) !important;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.navbar .navbar-brand,
 .navbar .nav-link {
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    padding: 0.42rem 0.8rem !important;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.navbar .navbar-nav {
-    gap: 0.2rem;
-}
-
-.navbar .nav-item {
-    position: relative;
-}
-
-.navbar .nav-item + .nav-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 55%;
-    width: 1px;
-    background: color-mix(in srgb, var(--line) 90%, #ffffff);
+    color: var(--text-mid) !important;
+    letter-spacing: 0.05em;
 }
 
 .navbar .nav-link:hover,
+.navbar .navbar-brand:hover,
 .navbar .nav-link:focus {
-    background: color-mix(in srgb, var(--brand) 9%, #ffffff);
+    color: var(--text) !important;
 }
 
-.navbar .nav-link.is-active,
-.navbar .dropdown-toggle.is-active {
-    background: color-mix(in srgb, var(--brand) 14%, #ffffff);
-    color: var(--brand) !important;
+.navbar .dropdown-menu {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
 }
 
-.page-section {
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+.navbar .dropdown-item {
+    color: var(--text-mid);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background: var(--bg-warm);
+    color: var(--text);
+}
+
+/* Footer used in current base.html */
+.footer {
+    border-top: 1px solid var(--line);
+    margin-top: 6rem;
+    background: transparent;
+}
+
+.footer .small {
+    color: var(--text-mid);
 }
