@@ -13,6 +13,9 @@
 			otherPurposePrompt: "Add a short subject or purpose",
 			confirmContact: "Send this message now?",
 			confirmSubmit: "Submit your artwork for review now?",
+			fileChooseLabel: "Choose file",
+			fileNoSelection: "No file chosen",
+			fileMultiSelection: "{count} files selected",
 			structuredFlow: false,
 		},
 		ja_JP: {
@@ -24,6 +27,9 @@
 			otherPurposePrompt: "\u4ef6\u540d\u307e\u305f\u306f\u76ee\u7684\u3092\u7c21\u6f54\u306b\u3054\u8a18\u5165\u304f\u3060\u3055\u3044",
 			confirmContact: "\u3053\u306e\u5185\u5bb9\u3092\u9001\u4fe1\u3057\u307e\u3059\u304b\uff1f",
 			confirmSubmit: "\u3053\u306e\u4f5c\u54c1\u3092\u5be9\u67fb\u7528\u306b\u63d0\u51fa\u3057\u307e\u3059\u304b\uff1f",
+			fileChooseLabel: "\u30d5\u30a1\u30a4\u30eb\u3092\u9078\u629e",
+			fileNoSelection: "\u30d5\u30a1\u30a4\u30eb\u304c\u9078\u629e\u3055\u308c\u3066\u3044\u307e\u305b\u3093",
+			fileMultiSelection: "{count}\u4ef6\u306e\u30d5\u30a1\u30a4\u30eb\u304c\u9078\u629e\u3055\u308c\u307e\u3057\u305f",
 			structuredFlow: true,
 		},
 		zh_CN: {
@@ -35,6 +41,9 @@
 			otherPurposePrompt: "\u8bf7\u586b\u5199\u7b80\u77ed\u4e3b\u9898\u6216\u76ee\u7684",
 			confirmContact: "\u786e\u8ba4\u53d1\u9001\u6b64\u6d88\u606f\u5417\uff1f",
 			confirmSubmit: "\u786e\u8ba4\u63d0\u4ea4\u6b64\u4f5c\u54c1\u4f9b\u753b\u5eca\u5ba1\u6838\u5417\uff1f",
+			fileChooseLabel: "\u9009\u62e9\u6587\u4ef6",
+			fileNoSelection: "\u672a\u9009\u62e9\u6587\u4ef6",
+			fileMultiSelection: "\u5df2\u9009\u62e9 {count} \u4e2a\u6587\u4ef6",
 			structuredFlow: true,
 		},
 	};
@@ -124,6 +133,46 @@
 		});
 	}
 
+	function wireLocalizedFileInputs(form, profile) {
+		if (!form) {
+			return;
+		}
+
+		const fileInputs = form.querySelectorAll('input[type="file"]');
+		fileInputs.forEach((input) => {
+			const wrapper = input.nextElementSibling;
+			if (!wrapper) {
+				return;
+			}
+
+			const trigger = wrapper.querySelector("[data-file-trigger]");
+			const fileNameNode = wrapper.querySelector("[data-file-name]");
+			if (!trigger || !fileNameNode) {
+				return;
+			}
+
+			trigger.textContent = profile.fileChooseLabel;
+			fileNameNode.textContent = profile.fileNoSelection;
+			fileNameNode.setAttribute("aria-live", "polite");
+			fileNameNode.setAttribute("aria-atomic", "true");
+
+			input.addEventListener("change", () => {
+				const files = input.files;
+				if (!files || files.length === 0) {
+					fileNameNode.textContent = profile.fileNoSelection;
+					return;
+				}
+
+				if (files.length === 1) {
+					fileNameNode.textContent = files[0].name;
+					return;
+				}
+
+				fileNameNode.textContent = profile.fileMultiSelection.replace("{count}", String(files.length));
+			});
+		});
+	}
+
 	function wireActiveNavbarState() {
 		const path = window.location.pathname.replace(/\/$/, "") || "/";
 		const navLinks = document.querySelectorAll(".navbar .nav-link[href]");
@@ -152,6 +201,7 @@
 		wirePurposeField(profile);
 		wireConfirmOnSubmit(contactForm, profile.confirmContact);
 		wireConfirmOnSubmit(submitForm, profile.confirmSubmit);
+		wireLocalizedFileInputs(submitForm, profile);
 		wireActiveNavbarState();
 
 		if (profile.structuredFlow) {

@@ -57,15 +57,27 @@
 
                     <div class="mb-4">
                         <label for="portfolio" class="form-label fw-semibold">{{ _('Artist Portfolio') }}</label>
-                        <input type="file" class="form-control" id="portfolio" name="portfolio"
+                        <input type="file" class="visually-hidden" id="portfolio" name="portfolio"
                             accept=".pdf,.zip,.jpg,.jpeg,.png,.webp" />
+                        <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+                            <label for="portfolio" class="btn btn-outline-secondary mb-0" data-file-trigger>
+                                {{ _('Choose file') }}
+                            </label>
+                            <span class="form-text m-0" data-file-name>{{ _('No file chosen') }}</span>
+                        </div>
                         <div class="form-text">{{ _('Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: 20MB.') }}</div>
                     </div>
 
                     <div class="mb-4">
                         <label for="cv_resume" class="form-label fw-semibold">{{ _('Artist CV / Resume') }}</label>
-                        <input type="file" class="form-control" id="cv_resume" name="cv_resume"
+                        <input type="file" class="visually-hidden" id="cv_resume" name="cv_resume"
                             accept=".pdf,.doc,.docx" />
+                        <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+                            <label for="cv_resume" class="btn btn-outline-secondary mb-0" data-file-trigger>
+                                {{ _('Choose file') }}
+                            </label>
+                            <span class="form-text m-0" data-file-name>{{ _('No file chosen') }}</span>
+                        </div>
                         <div class="form-text">{{ _('Optional — upload your CV or resume in PDF or Word format. Max size: 10MB.') }}</div>
                     </div>
 
@@ -110,8 +122,14 @@
 
                     <div class="mb-4">
                         <label for="artwork_image" class="form-label fw-semibold">{{ _('Upload Artwork Image *') }}</label>
-                        <input type="file" class="form-control" id="artwork_image" name="artwork_image"
+                        <input type="file" class="visually-hidden" id="artwork_image" name="artwork_image"
                             accept="image/*" required />
+                        <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+                            <label for="artwork_image" class="btn btn-outline-secondary mb-0" data-file-trigger>
+                                {{ _('Choose file') }}
+                            </label>
+                            <span class="form-text m-0" data-file-name>{{ _('No file chosen') }}</span>
+                        </div>
                         <div class="form-text">{{ _('Accepted formats: JPG, PNG, WEBP. Max size: 10MB.') }}</div>
                     </div>
 
