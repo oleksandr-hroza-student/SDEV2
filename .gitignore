@@ -1,0 +1,45 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+# Coverage and test output
+.coverage
+.coverage.*
+htmlcov/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Installer / logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Local environment files
+.python-version
+.env
+.env.*
+.flaskenv
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
