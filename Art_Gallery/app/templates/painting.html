@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}{{ painting.title }} — [untitled]{% endblock %}
+{% block content %}
+
+<div class="painting-page">
+  <div class="painting-img-col">
+    <img src="{{ painting.img }}" alt="{{ painting.title }}" class="painting-main-img" />
+  </div>
+  <div class="painting-info-col">
+    <p class="painting-year">{{ painting.year }}</p>
+    <h1 class="painting-title">{{ painting.title }}</h1>
+    <p class="painting-material">{{ painting.material }}</p>
+    <p class="painting-size">{{ painting.size }}</p>
+    <p class="painting-desc">{{ painting.description }}</p>
+
+    <div class="painting-artist-card">
+      <div class="painting-artist-inner">
+        <div class="painting-artist-photo-wrap">
+          <img src="{{ artist.photo }}" alt="{{ artist.name }}" class="painting-artist-photo" />
+          <div class="painting-artist-bio-tooltip"><p>{{ artist.bio_short }}</p></div>
+        </div>
+        <div class="painting-artist-text">
+          <p class="painting-artist-label">{{ _('Artist') }}</p>
+          <a href="{{ url_for('artist', artist_id=artist.id) }}" class="painting-artist-name">{{ artist.name }}</a>
+        </div>
+      </div>
+      <a href="{{ url_for('artist', artist_id=artist.id) }}" class="btn-outline btn-sm">{{ _('View All Works') }}</a>
+    </div>
+
+    <a href="{{ url_for('catalog') }}" class="back-link">← {{ _('Back to Catalog') }}</a>
+  </div>
+</div>
+
+{% endblock %}

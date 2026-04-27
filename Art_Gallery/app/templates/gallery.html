@@ -1,20 +1,93 @@
 {% extends "base.html" %}
 
 {% block hero %}
-<section class="page-section clearfix">
+<section class="page-section catalog-hero">
     <div class="container">
-        <h2 class="text-center mb-4">{{ _('Gallery') }}</h2>
+        <div class="page-header">
+            <h2 class="page-title">{{ _('Catalog') }}</h2>
+            <p class="page-sub">{{ _('A curated selection from the gallery collection.') }}</p>
+        </div>
     </div>
 </section>
 {% endblock %}
 
 {% block main %}
 <section class="page-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center text-muted py-5">
-                <p>{{ _('Gallery content coming soon.') }}</p>
-            </div>
+    <div class="container catalog-grid-wrap">
+        {% set items = paintings.values() if paintings is defined else [] %}
+
+        {% if items|length > 0 %}
+        <div class="catalog-grid">
+            {% for p in items %}
+            {% set artist = artists[p.artist_id] if artists is defined and p.artist_id in artists else None %}
+            <article class="catalog-card">
+                <a href="{{ url_for('gallery') }}" class="catalog-img-link" aria-label="{{ p.title }}">
+                    <img src="{{ p.thumb if p.thumb is defined else '/static/assets/img/tree1.png' }}"
+                        alt="{{ p.title }}" class="catalog-img" />
+                    <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
+                </a>
+                <div class="catalog-info">
+                    <h3 class="catalog-title">{{ p.title }}</h3>
+                    <p class="catalog-material">{{ p.material if p.material is defined else _('Mixed media') }}{% if
+                        p.year is defined %}, {{ p.year }}{% endif %}</p>
+                    {% if artist %}
+                    <div class="catalog-artist-wrap">
+                        <a href="{{ url_for('artists') }}" class="catalog-artist-link">
+                            <img src="{{ artist.photo if artist.photo is defined else '/static/assets/img/tree2.png' }}"
+                                alt="{{ artist.name if artist.name is defined else _('Artist') }}"
+                                class="catalog-artist-thumb" />
+                            <span class="catalog-artist-name">{{ artist.name if artist.name is defined else _('Artist')
+                                }}</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="catalog-grid">
+            <article class="catalog-card">
+                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work one') }}">
+                    <img src="/static/assets/img/tree1.png" alt="{{ _('Featured work one') }}" class="catalog-img" />
+                    <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
+                </a>
+                <div class="catalog-info">
+                    <h3 class="catalog-title">{{ _('Stillness in Branches') }}</h3>
+                    <p class="catalog-material">{{ _('Mixed media, 2025') }}</p>
+                </div>
+            </article>
+
+            <article class="catalog-card">
+                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work two') }}">
+                    <img src="/static/assets/img/tree2.png" alt="{{ _('Featured work two') }}" class="catalog-img" />
+                    <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
+                </a>
+                <div class="catalog-info">
+                    <h3 class="catalog-title">{{ _('Quiet Ground') }}</h3>
+                    <p class="catalog-material">{{ _('Ink and pigment, 2024') }}</p>
+                </div>
+            </article>
+
+            <article class="catalog-card">
+                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work three') }}">
+                    <img src="/static/assets/img/tree1.png" alt="{{ _('Featured work three') }}" class="catalog-img" />
+                    <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
+                </a>
+                <div class="catalog-info">
+                    <h3 class="catalog-title">{{ _('Light Between Leaves') }}</h3>
+                    <p class="catalog-material">{{ _('Oil on canvas, 2026') }}</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="text-center text-muted py-4">
+            <p>{{ _('Live catalog data will appear here when painting records are connected.') }}</p>
+        </div>
+        {% endif %}
+
+        <div class="text-center py-3">
+            <a class="btn btn-primary" href="{{ url_for('submit') }}">{{ _('Submit Your Art') }}</a>
         </div>
     </div>
 </section>

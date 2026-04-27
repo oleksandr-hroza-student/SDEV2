@@ -1,21 +1,34 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}{{ artist.name }} — [untitled]{% endblock %}
+{% block content %}
 
-{% block hero %}
-<section class="page-section clearfix">
-    <div class="container">
-        <h2 class="text-center mb-4">{{ _('Artists') }}</h2>
+<div class="artist-page">
+  <div class="artist-page-header">
+    <div class="artist-page-photo-wrap">
+      <img src="{{ artist.photo }}" alt="{{ artist.name }}" class="artist-page-photo" />
     </div>
-</section>
-{% endblock %}
+    <div class="artist-page-intro">
+      <p class="artist-page-label">{{ _('Artist') }}</p>
+      <h1 class="artist-page-name">{{ artist.name }}</h1>
+      <p class="artist-page-story">{{ artist.bio_full }}</p>
+    </div>
+  </div>
 
-{% block main %}
-<section class="page-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center text-muted py-5">
-                <p>{{ _('Artist profiles coming soon.') }}</p>
-            </div>
-        </div>
-    </div>
-</section>
+  <div class="artist-page-divider"><span>{{ _('Works') }}</span></div>
+
+  <div class="artist-works-grid">
+    {% for work in works %}
+    <a href="{{ url_for('painting', painting_id=work.id) }}" class="artist-work-card">
+      <img src="{{ work.thumb }}" alt="{{ work.title }}" class="artist-work-img" />
+      <div class="artist-work-info">
+        <p class="artist-work-title">{{ work.title }}</p>
+        <p class="artist-work-material">{{ work.material }}, {{ work.year }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <a href="{{ url_for('catalog') }}" class="back-link">← {{ _('Back to Catalog') }}</a>
+</div>
+
 {% endblock %}

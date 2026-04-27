@@ -1,49 +1,763 @@
-:root {
-	/* Ireland: higher individualism, lower power distance -> more personal, open UI tone */
-	--site-bg: #f7f6f1;
-	--surface: #ffffff;
-	--surface-muted: #eef4f0;
-	--text: #1f2a28;
-	--text-muted: #4d5f5c;
-	--line: #cfdad6;
-	--brand: #1f6f5f;
-	--brand-contrast: #ffffff;
+/* =========================================================
+   GALLERY DESIGN OVERRIDES
+   Applies main.css aesthetic to Bootstrap layout
+   ========================================================= */
 
-	--radius: 10px;
-	--font-body: "Raleway", "Segoe UI", sans-serif;
-	--font-heading: "Lora", Georgia, serif;
+
+/* =========================
+   Core Palette (main.css)
+   ========================= */
+
+:root {
+    --bg: #f4efe8;
+    --bg-warm: #ede7dd;
+    --bg-card: #faf7f3;
+
+    --text: #2a2420;
+    --text-mid: #6b5f55;
+    --text-dim: #9e9188;
+
+    --line: #d8cfc3;
+
+    --accent: #3a2e28;
+    --gold: #8c7355;
+    --white: #fffdf9;
+
+    --radius: 4px;
+    --transition: 0.22s ease;
+}
+
+
+/* =========================
+   Global reset
+   ========================= */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.65;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   Header / Branding
+   ========================= */
+
+.site-heading {
+    margin: 4rem 0 3rem;
 }
 
 .site-heading-upper {
-	letter-spacing: 0.16em;
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
 }
 
+.site-heading-lower {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    color: var(--text);
+}
+
+
+/* =========================
+   Navbar (Bootstrap override)
+   ========================= */
+
+/* Navbar shell */
+.navbar {
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+}
+
+/* Nav links */
 .navbar .nav-link {
-	font-weight: 600;
-	border-radius: 999px;
-	padding: 0.42rem 0.82rem !important;
-	font-size: 0.95rem;
-	letter-spacing: 0.03em;
-	white-space: nowrap;
-	transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+    color: var(--text-mid);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    position: relative;
+    padding: 0;
+    transition: color var(--transition);
 }
 
-.navbar .navbar-nav {
-	gap: 0.2rem;
+/* Text color on hover */
+.navbar .nav-link:hover {
+    color: var(--text);
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-	background: color-mix(in srgb, var(--brand) 12%, #ffffff);
-	transform: translateY(-1px);
+/* Hover underline */
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width var(--transition);
 }
 
-.navbar .nav-link.is-active,
-.navbar .dropdown-toggle.is-active {
-	background: color-mix(in srgb, var(--brand) 20%, #ffffff);
-	color: var(--brand) !important;
+.navbar .nav-link:hover::after {
+    width: 100%;
 }
+
+
+/* =========================
+   Language dropdown
+   ========================= */
+
+.dropdown-menu {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.dropdown-item {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+}
+
+.dropdown-item:hover {
+    background: var(--bg-warm);
+    color: var(--text);
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
 
 .btn {
-	border-radius: 999px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    padding: 0.65rem 1.5rem;
+    transition: all var(--transition);
 }
+
+/* Primary */
+.btn-primary {
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+/* Remove Bootstrap blue */
+.btn-primary:focus,
+.btn-primary:active {
+    box-shadow: none;
+}
+
+
+/* =========================
+   Main content spacing
+   ========================= */
+
+main {
+    min-height: 60vh;
+    padding-bottom: 4rem;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    color: var(--text-mid);
+}
+
+.footer p {
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+.footer .small {
+    color: var(--text-dim);
+}
+
+/* =========================================================
+   CATALOG PAGE — Gallery Style
+   Uses main.css design language
+   ========================================================= */
+
+
+/* Page header */
+
+.page-header {
+    max-width: var(--max-w);
+    margin: 4rem auto 3rem;
+    padding: 0 2rem 2rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.page-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--text);
+}
+
+.page-sub {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    font-style: italic;
+}
+
+
+/* 
+   Catalog grid
+    */
+
+.catalog-grid {
+    max-width: var(--max-w);
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+
+/* 
+   Catalog card
+    */
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 
+   Image &  overlay
+    */
+
+.catalog-img-link {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--bg-warm);
+    aspect-ratio: 4 / 5;
+}
+
+.catalog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.catalog-card:hover .catalog-img {
+    transform: scale(1.04);
+}
+
+.catalog-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(42, 36, 32, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.catalog-overlay span {
+    color: var(--white);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+}
+
+.catalog-img-link:hover .catalog-overlay {
+    opacity: 1;
+}
+
+
+/* 
+   Text content
+    */
+
+.catalog-info {
+    padding: 1rem 0 0;
+}
+
+.catalog-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.catalog-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.catalog-material {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    margin-top: 0.2rem;
+    font-style: italic;
+}
+
+
+/* 
+   Artist link & tooltip
+  */
+
+.catalog-artist-wrap {
+    margin-top: 0.75rem;
+}
+
+.catalog-artist-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.catalog-artist-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+}
+
+.catalog-artist-name {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: transparent;
+    transition: color var(--transition),
+                text-decoration-color var(--transition);
+}
+
+.catalog-artist-link:hover .catalog-artist-name {
+    color: var(--text);
+    text-decoration-color: var(--text);
+}
+
+
+/* Tooltip */
+.catalog-artist-tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    width: 240px;
+    background: var(--text);
+    color: var(--white);
+    font-size: 0.78rem;
+    line-height: 1.55;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    pointer-events: none;
+    z-index: 20;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-artist-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    border: 6px solid transparent;
+    border-top-color: var(--text);
+}
+
+.catalog-artist-link:hover .catalog-artist-tooltip {
+    display: block;
+}
+
+
+/*
+   Responsive
+    */
+
+@media (max-width: 900px) {
+    .catalog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/*======================= ARTIST PAGE =======================*/
+
+.artist-page {
+    max-width: var(--max-w);
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+}
+
+/* header layout */
+.artist-page-header {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid var(--line);
+}
+
+/* artist photo */
+.artist-page-photo-wrap {
+    position: sticky;
+    top: 88px;
+}
+
+.artist-page-photo {
+    width: 100%;
+    border-radius: var(--radius);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+/* intro text */
+.artist-page-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.artist-page-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.artist-page-story {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--text-mid);
+    max-width: 64ch;
+}
+
+/* section divider */
+.artist-page-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 0 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--text-dim);
+}
+
+.artist-page-divider::before,
+.artist-page-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+}
+
+/* works grid */
+.artist-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* work card */
+.artist-work-card {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--bg-warm);
+    transition: transform var(--transition);
+    color: inherit;
+}
+
+.artist-work-card:hover {
+    transform: translateY(-4px);
+}
+
+/* work image */
+.artist-work-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.artist-work-card:hover .artist-work-img {
+    transform: scale(1.04);
+}
+
+/* work info */
+.artist-work-info {
+    padding: 0.75rem 1rem 1rem;
+}
+
+.artist-work-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.artist-work-material {
+    font-size: 0.78rem;
+    color: var(--text-mid);
+    font-style: italic;
+    margin-top: 0.2rem;
+}
+
+/* back link */
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    letter-spacing: 0.03em;
+    transition: color var(--transition);
+}
+
+.back-link:hover {
+    color: var(--text);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .artist-page-header {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .artist-page-photo-wrap {
+        position: static;
+        max-width: 220px;
+    }
+
+    .artist-works-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/*======================= PAINTING PAGE =======================*//*======================= PAINT);
+}
+
+/* metadata */
+.painting-material {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    font-style: italic;
+}
+
+.painting-size {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    margin-top: 0.25rem;
+}
+
+/* description */
+.painting-desc {
+    margin-top: 1.75rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-mid);
+}
+
+/* artist card */
+.painting-artist-card {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* artist + avatar */
+.painting-artist-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.painting-artist-photo-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.painting-artist-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--line);
+}
+
+/* bio tooltip */
+.painting-artist-bio-tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    width: 260px;
+    background: var(--text);
+    color: var(--white);
+    font-size: 0.78rem;
+    line-height: 1.55;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    z-index: 20;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.painting-artist-bio-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    border: 6px solid transparent;
+    border-top-color: var(--text);
+}
+
+.painting-artist-photo-wrap:hover .painting-artist-bio-tooltip {
+    display: block;
+}
+
+/* artist text */
+.painting-artist-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.2rem;
+}
+
+.painting-artist-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    transition: color var(--transition);
+}
+
+.painting-artist-name:hover {
+    color: var(--gold);
+}
+
+/* back link */
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    letter-spacing: 0.03em;
+    transition: color var(--transition);
+}
+
+.back-link:hover {
+    color: var(--text);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .painting-page {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.painting-page {
+    max-width: var(--max-w);
+    margin: 3rem auto 5rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+/* main image */
+.painting-main-img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(42, 36, 32, 0.12);
+    background: var(--bg-warm);
+}
+
+/* text column */
+.painting-info-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* year */
+.painting-year {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* title */
+.painting-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
