@@ -21,7 +21,8 @@
             {% for p in items %}
             {% set artist = artists[p.artist_id] if artists is defined and p.artist_id in artists else None %}
             <article class="catalog-card">
-                <a href="{{ url_for('gallery') }}" class="catalog-img-link" aria-label="{{ p.title }}">
+                <a href="{{ url_for('painting', painting_id=p.id) }}" class="catalog-img-link"
+                    aria-label="{{ p.title }}">
                     <img src="{{ p.thumb if p.thumb is defined else '/static/assets/img/tree1.png' }}"
                         alt="{{ p.title }}" class="catalog-img" />
                     <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
@@ -32,7 +33,7 @@
                         p.year is defined %}, {{ p.year }}{% endif %}</p>
                     {% if artist %}
                     <div class="catalog-artist-wrap">
-                        <a href="{{ url_for('artists') }}" class="catalog-artist-link">
+                        <a href="{{ url_for('artists_page') }}" class="catalog-artist-link">
                             <img src="{{ artist.photo if artist.photo is defined else '/static/assets/img/tree2.png' }}"
                                 alt="{{ artist.name if artist.name is defined else _('Artist') }}"
                                 class="catalog-artist-thumb" />
@@ -48,7 +49,8 @@
         {% else %}
         <div class="catalog-grid">
             <article class="catalog-card">
-                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work one') }}">
+                <a href="{{ url_for('painting', painting_id='still-branches') }}" class="catalog-img-link"
+                    aria-label="{{ _('Featured work one') }}">
                     <img src="/static/assets/img/tree1.png" alt="{{ _('Featured work one') }}" class="catalog-img" />
                     <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
                 </a>
@@ -59,7 +61,8 @@
             </article>
 
             <article class="catalog-card">
-                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work two') }}">
+                <a href="{{ url_for('painting', painting_id='quiet-root') }}" class="catalog-img-link"
+                    aria-label="{{ _('Featured work two') }}">
                     <img src="/static/assets/img/tree2.png" alt="{{ _('Featured work two') }}" class="catalog-img" />
                     <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
                 </a>
@@ -70,7 +73,8 @@
             </article>
 
             <article class="catalog-card">
-                <a href="#" class="catalog-img-link" aria-label="{{ _('Featured work three') }}">
+                <a href="{{ url_for('painting', painting_id='fog-study') }}" class="catalog-img-link"
+                    aria-label="{{ _('Featured work three') }}">
                     <img src="/static/assets/img/tree1.png" alt="{{ _('Featured work three') }}" class="catalog-img" />
                     <div class="catalog-overlay"><span>{{ _('View Work') }}</span></div>
                 </a>

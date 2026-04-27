@@ -1,48 +1,75 @@
 {% extends "base.html" %}
+{% block title %}{{ _('Events') }} — Global Art Gallery{% endblock %}
 
-{% block hero %}
-<section class="page-section clearfix">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="mb-2">{{ _('Events') }}</h2>
-            <p class="text-muted">{{ _('Explore upcoming exhibitions, talks, and cultural programs.') }}</p>
-        </div>
-    </div>
-</section>
-{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1 class="page-title">{{ _('Events') }}</h1>
+    <p class="page-sub">{{ _('Auctions, talks & open studios') }}</p>
+</div>
 
-{% block main %}
-<section class="page-section">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0">
-                    <div class="card-body">
-                        <h5 class="text-primary mb-2">{{ _('Seasonal Exhibition') }}</h5>
-                        <p class="mb-1"><strong>{{ _('Date:') }}</strong> {{ _('12 May 2026') }}</p>
-                        <p class="text-muted mb-0">{{ _('A curated showcase of contemporary works from featured artists.') }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0">
-                    <div class="card-body">
-                        <h5 class="text-primary mb-2">{{ _('Artist Talk') }}</h5>
-                        <p class="mb-1"><strong>{{ _('Date:') }}</strong> {{ _('26 May 2026') }}</p>
-                        <p class="text-muted mb-0">{{ _('Join an open discussion with guest artists about process and inspiration.') }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card shadow-sm h-100 border-0">
-                    <div class="card-body">
-                        <h5 class="text-primary mb-2">{{ _('Community Workshop') }}</h5>
-                        <p class="mb-1"><strong>{{ _('Date:') }}</strong> {{ _('9 June 2026') }}</p>
-                        <p class="text-muted mb-0">{{ _('Hands-on creative workshop open to students and local communities.') }}</p>
-                    </div>
-                </div>
-            </div>
+<div class="events-list">
+
+    <article class="event-card event-highlight">
+        <span class="event-badge">{{ _('Next Auction') }}</span>
+
+        <div class="event-date-col">
+            <p class="event-date">April 18, 2026</p>
+            <p class="event-time">6:00 PM</p>
         </div>
-    </div>
-</section>
+
+        <div class="event-body">
+            <h2 class="event-title">{{ _('Spring Auction') }}</h2>
+            <p class="event-location">{{ _('Gallery, Main Hall') }}</p>
+            <p class="event-desc">
+                {{ _('Our spring auction features selected works from the permanent collection alongside new submissions from emerging artists.') }}
+            </p>
+        </div>
+    </article>
+
+    <article class="event-card">
+        <div class="event-date-col">
+            <p class="event-date">May 29, 2026</p>
+            <p class="event-time">7:00 PM</p>
+        </div>
+
+        <div class="event-body">
+            <h2 class="event-title">{{ _('Artist Talk: Kenji Sato') }}</h2>
+            <p class="event-location">{{ _('Gallery, Reading Room') }}</p>
+            <p class="event-desc">
+                {{ _('Join Kenji Sato for an intimate conversation about memory, language, and abstract expressionism.') }}
+            </p>
+        </div>
+    </article>
+
+    <article class="event-card">
+        <div class="event-date-col">
+            <p class="event-date">June 8–9, 2026</p>
+            <p class="event-time">11:00 AM – 5:00 PM</p>
+        </div>
+
+        <div class="event-body">
+            <h2 class="event-title">{{ _('Open Studio Weekend') }}</h2>
+            <p class="event-location">{{ _('Gallery, All Floors') }}</p>
+            <p class="event-desc">
+                {{ _('The gallery opens all studio spaces to the public with free admission. Artists will be present throughout the weekend.') }}
+            </p>
+        </div>
+    </article>
+
+    <article class="event-card">
+        <div class="event-date-col">
+            <p class="event-date">July 14, 2026</p>
+            <p class="event-time">2:00 PM</p>
+        </div>
+
+        <div class="event-body">
+            <h2 class="event-title">{{ _('Community Print Workshop') }}</h2>
+            <p class="event-location">{{ _('Gallery, Education Studio') }}</p>
+            <p class="event-desc">
+                {{ _('A hands‑on workshop exploring basic printmaking techniques. Open to students and local community members.') }}
+            </p>
+        </div>
+    </article>
+
+</div>
 {% endblock %}

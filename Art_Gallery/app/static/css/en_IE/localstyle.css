@@ -761,3 +761,115 @@ main {
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: 0.75rem;
+
+}
+
+
+/*======================= EVENTS =======================*/
+
+.events-list {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* individual event card */
+.event-card {
+    padding: 2rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    align-items: start;
+    position: relative;
+    transition: box-shadow var(--transition);
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 20px rgba(42, 36, 32, 0.08);
+}
+
+/* highlighted event */
+.event-highlight {
+    border-color: var(--gold);
+    background: #fdf9f3;
+}
+
+/* badge for highlighted event */
+.event-badge {
+    position: absolute;
+    top: -11px;
+    left: 2rem;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+/* date column */
+.event-date-col {
+    text-align: right;
+    padding-top: 0.1rem;
+}
+
+.event-date {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.event-time {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    margin-top: 0.2rem;
+}
+
+/* event text */
+.event-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+}
+
+.event-location {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.event-desc {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .event-date-col {
+        text-align: left;
+    }
+}

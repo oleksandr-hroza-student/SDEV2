@@ -3,32 +3,32 @@
 {% block content %}
 
 <div class="artist-page">
-  <div class="artist-page-header">
-    <div class="artist-page-photo-wrap">
-      <img src="{{ artist.photo }}" alt="{{ artist.name }}" class="artist-page-photo" />
+    <div class="artist-page-header">
+        <div class="artist-page-photo-wrap">
+            <img src="{{ artist.photo }}" alt="{{ artist.name }}" class="artist-page-photo" />
+        </div>
+        <div class="artist-page-intro">
+            <p class="artist-page-label">{{ _('Artist') }}</p>
+            <h1 class="artist-page-name">{{ artist.name }}</h1>
+            <p class="artist-page-story">{{ artist.bio_full }}</p>
+        </div>
     </div>
-    <div class="artist-page-intro">
-      <p class="artist-page-label">{{ _('Artist') }}</p>
-      <h1 class="artist-page-name">{{ artist.name }}</h1>
-      <p class="artist-page-story">{{ artist.bio_full }}</p>
+
+    <div class="artist-page-divider"><span>{{ _('Works') }}</span></div>
+
+    <div class="artist-works-grid">
+        {% for work in works %}
+        <a href="{{ url_for('painting', painting_id=work.id) }}" class="artist-work-card">
+            <img src="{{ work.thumb }}" alt="{{ work.title }}" class="artist-work-img" />
+            <div class="artist-work-info">
+                <p class="artist-work-title">{{ work.title }}</p>
+                <p class="artist-work-material">{{ work.material }}, {{ work.year }}</p>
+            </div>
+        </a>
+        {% endfor %}
     </div>
-  </div>
 
-  <div class="artist-page-divider"><span>{{ _('Works') }}</span></div>
-
-  <div class="artist-works-grid">
-    {% for work in works %}
-    <a href="{{ url_for('painting', painting_id=work.id) }}" class="artist-work-card">
-      <img src="{{ work.thumb }}" alt="{{ work.title }}" class="artist-work-img" />
-      <div class="artist-work-info">
-        <p class="artist-work-title">{{ work.title }}</p>
-        <p class="artist-work-material">{{ work.material }}, {{ work.year }}</p>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-
-  <a href="{{ url_for('catalog') }}" class="back-link">← {{ _('Back to Catalog') }}</a>
+    <a href="{{ url_for('gallery') }}" class="back-link">← {{ _('Back to Catalog') }}</a>
 </div>
 
 {% endblock %}

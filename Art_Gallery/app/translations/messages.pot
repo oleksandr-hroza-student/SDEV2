@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-27 21:27+0100\n"
+"POT-Creation-Date: 2026-04-27 23:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,215 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
+
+#: app/artistdata.py:12
+msgid "An Irish mixed‑media artist exploring stillness and organic form."
+msgstr ""
+
+#: app/artistdata.py:14
+msgid ""
+"Aoife Murphy was born in Cork, Ireland, and builds her mixed-media work "
+"from the quiet details of the natural world. She combines ink, bark "
+"textures, pressed foliage, and handmade paper to create layered surfaces "
+"that feel collected rather than composed. Her practice begins with "
+"sketchbooks filled during long walks through woodland paths and coastal "
+"edges, where she studies how weather changes the tone of a place. Aoife "
+"is drawn to the spaces between things: the pause before movement, the "
+"hollow under roots, and the thin light that settles after rain."
+msgstr ""
+
+#: app/artistdata.py:26
+msgid "A Kyoto‑based painter blending abstraction with calligraphic gesture."
+msgstr ""
+
+#: app/artistdata.py:28
+msgid ""
+"Kenji Sato was born in 1971 in Kyoto, Japan. His work sits at the "
+"boundary between contemporary abstraction and traditional brush practice."
+" His paintings emphasize balance, negative space, and rhythm. Kenji "
+"paints his experiences of nature and memory, often drawing on the "
+"aesthetics of wabi-sabi and yūgen. He enjoys making his thoughts visible "
+"through the process of painting, allowing for spontaneity and "
+"imperfection to guide the final composition."
+msgstr ""
+
+#: app/artistdata.py:38
+msgid "A Spanish painter working with light, pigment, and restrained colour."
+msgstr ""
+
+#: app/artistdata.py:40
+msgid ""
+"Lucía Fernández was born in Valencia, Spain, and paints interiors, "
+"thresholds, and unguarded moments of stillness. She works with thin veils"
+" of oil and pigment, building colour slowly so that the surface holds the"
+" trace of every adjustment. Her compositions often begin from a "
+"remembered room or a patch of afternoon light, then move toward something"
+" more intimate and reflective. Lucía keeps her palette restrained so that"
+" slight shifts in warmth, shadow, and reflection carry the emotional "
+"weight of the piece."
+msgstr ""
+
+#: app/artistdata.py:52
+msgid ""
+"A Chinese painter blending ink traditions with contemporary landscape "
+"memory."
+msgstr ""
+
+#: app/artistdata.py:54
+msgid ""
+"Mei Lin Zhang was born in Hangzhou, China, and works between traditional "
+"ink painting and contemporary mixed media. Her paintings often begin with"
+" field notes taken beside rivers, old gardens, and quiet stone paths, "
+"then evolve into layered compositions that balance atmosphere and "
+"structure. She is interested in how memory changes the shape of a "
+"landscape, and how a single line can suggest both distance and intimacy. "
+"Mei Lin’s practice is grounded in patience, repetition, and close "
+"attention to the surfaces where water, paper, and pigment meet."
+msgstr ""
+
+#: app/artistdata.py:70 app/templates/gallery.html:58
+msgid "Stillness in Branches"
+msgstr ""
+
+#: app/artistdata.py:73
+msgid "Ink and mixed media"
+msgstr ""
+
+#: app/artistdata.py:76
+msgid ""
+"A quiet composition built from layered ink washes and brittle line work, "
+"suggesting suspended movement."
+msgstr ""
+
+#: app/artistdata.py:85
+msgid "Quiet Root"
+msgstr ""
+
+#: app/artistdata.py:88
+msgid "Ink on handmade paper"
+msgstr ""
+
+#: app/artistdata.py:91
+msgid "A minimal study of grounding forms and negative space."
+msgstr ""
+
+#: app/artistdata.py:99
+msgid "Fog Study"
+msgstr ""
+
+#: app/artistdata.py:102
+msgid "Ink wash"
+msgstr ""
+
+#: app/artistdata.py:105
+msgid "An atmospheric work exploring diffusion and edge softness."
+msgstr ""
+
+#: app/artistdata.py:113
+msgid "Moss Line"
+msgstr ""
+
+#: app/artistdata.py:116
+msgid "Ink, pigment, and collage on paper"
+msgstr ""
+
+#: app/artistdata.py:119
+msgid ""
+"A textured study of damp edges, with fragmented marks suggesting the slow"
+" spread of moss along stone and wood."
+msgstr ""
+
+#: app/artistdata.py:127
+msgid "Shadow Bark"
+msgstr ""
+
+#: app/artistdata.py:130
+msgid "Mixed media on handmade paper"
+msgstr ""
+
+#: app/artistdata.py:133
+msgid ""
+"Layered bark rubbings and ink washes create a dark, tactile surface "
+"shaped by shifting woodland shade."
+msgstr ""
+
+#: app/artistdata.py:141
+msgid "Silent River"
+msgstr ""
+
+#: app/artistdata.py:144
+msgid "Acrylic and sumi ink on canvas"
+msgstr ""
+
+#: app/artistdata.py:147
+msgid ""
+"Large gestural strokes echo the movement of water without direct "
+"representation."
+msgstr ""
+
+#: app/artistdata.py:155
+msgid "Ink Memory"
+msgstr ""
+
+#: app/artistdata.py:158
+msgid "Ink on canvas"
+msgstr ""
+
+#: app/artistdata.py:161
+msgid "A meditative composition balancing repetition and interruption."
+msgstr ""
+
+#: app/artistdata.py:169
+msgid "Window After Rain"
+msgstr ""
+
+#: app/artistdata.py:172
+msgid "Oil on linen"
+msgstr ""
+
+#: app/artistdata.py:175
+msgid ""
+"Soft reflections and washed-out daylight capture the calm atmosphere of a"
+" room just after the storm clears."
+msgstr ""
+
+#: app/artistdata.py:183
+msgid "Soft Afternoon"
+msgstr ""
+
+#: app/artistdata.py:186
+msgid "Oil on canvas"
+msgstr ""
+
+#: app/artistdata.py:189
+msgid "Muted tones capture the way daylight settles across an empty room."
+msgstr ""
+
+#: app/templates/art.html:5
+msgid "Title"
+msgstr ""
+
+#: app/templates/art.html:10 app/templates/base.html:70
+#: app/templates/gallery.html:7
+msgid "Catalog"
+msgstr ""
+
+#: app/templates/art.html:15
+msgid "Art Piece 1"
+msgstr ""
+
+#: app/templates/art.html:16 app/templates/art.html:24
+#: app/templates/art.html:32
+msgid "Add details about this piece."
+msgstr ""
+
+#: app/templates/art.html:23
+msgid "Art Piece 2"
+msgstr ""
+
+#: app/templates/art.html:31
+msgid "Art Piece 3"
+msgstr ""
 
 #: app/templates/artists.html:11 app/templates/gallery.html:38
 #: app/templates/gallery.html:40 app/templates/painting.html:25
@@ -28,6 +237,10 @@ msgstr ""
 
 #: app/templates/artists.html:31 app/templates/painting.html:34
 msgid "Back to Catalog"
+msgstr ""
+
+#: app/templates/base.html:8
+msgid "Global Art Gallery showcasing culture across borders"
 msgstr ""
 
 #: app/templates/base.html:10 app/templates/base.html:43
@@ -46,11 +259,8 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: app/templates/base.html:70 app/templates/gallery.html:7
-msgid "Catalog"
-msgstr ""
-
-#: app/templates/base.html:73 app/templates/events.html:7
+#: app/templates/base.html:73 app/templates/events.html:2
+#: app/templates/events.html:6
 msgid "Events"
 msgstr ""
 
@@ -80,6 +290,36 @@ msgstr ""
 
 #: app/templates/base.html:126
 msgid "© 2026 Global Art Gallery"
+msgstr ""
+
+#: app/templates/base.html:136
+msgid ""
+"Share your question in your own words. We will reply as clearly as "
+"possible."
+msgstr ""
+
+#: app/templates/base.html:137
+msgid "Use this form to present your work in your own voice."
+msgstr ""
+
+#: app/templates/base.html:138
+msgid "Please complete this field."
+msgstr ""
+
+#: app/templates/base.html:139
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: app/templates/base.html:140 app/templates/contact.html:44
+msgid "Add a short subject or purpose"
+msgstr ""
+
+#: app/templates/base.html:141
+msgid "Send this message now?"
+msgstr ""
+
+#: app/templates/base.html:142
+msgid "Submit your artwork for review now?"
 msgstr ""
 
 #: app/templates/contact.html:8
@@ -134,10 +374,6 @@ msgstr ""
 
 #: app/templates/contact.html:42
 msgid "If Other, Please Specify"
-msgstr ""
-
-#: app/templates/contact.html:44
-msgid "Add a short subject or purpose"
 msgstr ""
 
 #: app/templates/contact.html:47
@@ -216,49 +452,68 @@ msgstr ""
 msgid "Current Exhibitions"
 msgstr ""
 
-#: app/templates/events.html:8
-msgid "Explore upcoming exhibitions, talks, and cultural programs."
+#: app/templates/events.html:7
+msgid "Auctions, talks & open studios"
+msgstr ""
+
+#: app/templates/events.html:13
+msgid "Next Auction"
 msgstr ""
 
 #: app/templates/events.html:21
-msgid "Seasonal Exhibition"
-msgstr ""
-
-#: app/templates/events.html:22 app/templates/events.html:31
-#: app/templates/events.html:40
-msgid "Date:"
+msgid "Spring Auction"
 msgstr ""
 
 #: app/templates/events.html:22
-msgid "12 May 2026"
+msgid "Gallery, Main Hall"
 msgstr ""
 
-#: app/templates/events.html:23
-msgid "A curated showcase of contemporary works from featured artists."
+#: app/templates/events.html:24
+msgid ""
+"Our spring auction features selected works from the permanent collection "
+"alongside new submissions from emerging artists."
 msgstr ""
 
-#: app/templates/events.html:30
-msgid "Artist Talk"
+#: app/templates/events.html:36
+msgid "Artist Talk: Kenji Sato"
 msgstr ""
 
-#: app/templates/events.html:31
-msgid "26 May 2026"
-msgstr ""
-
-#: app/templates/events.html:32
-msgid "Join an open discussion with guest artists about process and inspiration."
+#: app/templates/events.html:37
+msgid "Gallery, Reading Room"
 msgstr ""
 
 #: app/templates/events.html:39
-msgid "Community Workshop"
+msgid ""
+"Join Kenji Sato for an intimate conversation about memory, language, and "
+"abstract expressionism."
 msgstr ""
 
-#: app/templates/events.html:40
-msgid "9 June 2026"
+#: app/templates/events.html:51
+msgid "Open Studio Weekend"
 msgstr ""
 
-#: app/templates/events.html:41
-msgid "Hands-on creative workshop open to students and local communities."
+#: app/templates/events.html:52
+msgid "Gallery, All Floors"
+msgstr ""
+
+#: app/templates/events.html:54
+msgid ""
+"The gallery opens all studio spaces to the public with free admission. "
+"Artists will be present throughout the weekend."
+msgstr ""
+
+#: app/templates/events.html:66
+msgid "Community Print Workshop"
+msgstr ""
+
+#: app/templates/events.html:67
+msgid "Gallery, Education Studio"
+msgstr ""
+
+#: app/templates/events.html:69
+msgid ""
+"A hands‑on workshop exploring basic printmaking techniques. Open to "
+"students and local community members."
 msgstr ""
 
 #: app/templates/faq.html:7
@@ -322,10 +577,6 @@ msgstr ""
 msgid "Featured work one"
 msgstr ""
 
-#: app/templates/gallery.html:58
-msgid "Stillness in Branches"
-msgstr ""
-
 #: app/templates/gallery.html:59
 msgid "Mixed media, 2025"
 msgstr ""
@@ -374,12 +625,24 @@ msgstr ""
 msgid "Featured Preview"
 msgstr ""
 
+#: app/templates/index.html:21
+msgid "Tree artwork 1"
+msgstr ""
+
 #: app/templates/index.html:22
 msgid "Brief description of the first image goes here."
 msgstr ""
 
+#: app/templates/index.html:26
+msgid "Tree artwork 2"
+msgstr ""
+
 #: app/templates/index.html:27
 msgid "Brief description of the second image goes here."
+msgstr ""
+
+#: app/templates/index.html:31
+msgid "Tree artwork 3"
 msgstr ""
 
 #: app/templates/index.html:32

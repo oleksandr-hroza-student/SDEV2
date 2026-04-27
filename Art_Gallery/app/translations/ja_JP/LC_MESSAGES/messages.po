@@ -1,503 +1,73 @@
-# Japanese translations for Global Art Gallery
-msgid ""
-msgstr ""
-"Project-Id-Version: Global Art Gallery\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-25 22:34+0100\n"
-"PO-Revision-Date: 2026-04-22 00:00+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja_JP\n"
-"Language-Team: ja_JP <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
-
-#: app/templates/artists.html:6 app/templates/base.html:57
-msgid "Artists"
+#: app/templates/artists.html:11 app/templates/gallery.html:38
+#: app/templates/gallery.html:40 app/templates/painting.html:25
+msgid "Artist"
 msgstr "アーティスト"
 
-# --- artists.html ---
-#: app/templates/artists.html:16
-msgid "Artist profiles coming soon."
-msgstr "アーティストのプロフィールは近日公開予定です。"
+#: app/templates/artists.html:17
+msgid "Works"
+msgstr "作品"
 
-#: app/templates/base.html:10 app/templates/base.html:40
-msgid "Global Art Gallery"
-msgstr "グローバルアートギャラリー"
+#: app/templates/artists.html:31 app/templates/painting.html:34
+msgid "Back to Catalog"
+msgstr "カタログに戻る"
 
-# --- base.html ---
-#: app/templates/base.html:38
+#: app/templates/base.html:40
 msgid "Experience Art Through Irish Perspective"
 msgstr "日本の視点で芸術を体験"
 
-#: app/templates/base.html:48
-msgid "Art Gallery"
-msgstr "アートギャラリー"
-
-#: app/templates/base.html:55
-msgid "Home"
-msgstr "ホーム"
-
-#: app/templates/base.html:56 app/templates/gallery.html:6
-msgid "Gallery"
-msgstr "ギャラリー"
-
-#: app/templates/base.html:58 app/templates/events.html:7
-msgid "Events"
-msgstr "イベント"
-
-# --- submit.html ---
-#: app/templates/base.html:59
-msgid "Submit Your Art"
-msgstr "作品を応募する"
-
-# --- contact.html ---
-#: app/templates/base.html:60 app/templates/contact.html:7
-msgid "Contact Us"
-msgstr "お問い合わせ"
-
-#: app/templates/base.html:65
-msgid "Language"
-msgstr "言語"
-
-#: app/templates/base.html:90
-msgid "© 2026 Global Art Gallery"
-msgstr "© 2026 グローバルアートギャラリー"
-
-#: app/templates/contact.html:8
-msgid ""
-"Reach out with questions, partnership enquiries, artwork support "
-"requests, or media enquiries."
-msgstr "ご質問、提携に関するお問い合わせ、作品応募のサポート依頼、またはメディア関連のお問い合わせはこちらからご連絡ください。"
-
-#: app/templates/contact.html:21
-msgid "Name"
-msgstr "お名前"
-
-#: app/templates/contact.html:25
-msgid "Email"
-msgstr "メールアドレス"
-
-#: app/templates/contact.html:29
-msgid "Reason for Contact"
-msgstr "お問い合わせの理由"
-
-#: app/templates/contact.html:31
-msgid "Select a reason..."
-msgstr "理由を選択してください..."
-
-#: app/templates/contact.html:32
-msgid "General enquiry"
-msgstr "一般的なお問い合わせ"
-
-#: app/templates/contact.html:33
-msgid "Artwork submission support"
-msgstr "作品応募サポート"
-
-#: app/templates/contact.html:34
-msgid "Partnership or collaboration"
-msgstr "提携またはコラボレーション"
-
-#: app/templates/contact.html:35
-msgid "Press or media enquiry"
-msgstr "報道またはメディアのお問い合わせ"
-
-#: app/templates/contact.html:36
-msgid "Events and exhibitions"
-msgstr "イベントと展覧会"
-
-#: app/templates/contact.html:37
-msgid "Technical issue"
-msgstr "技術的な問題"
-
-#: app/templates/contact.html:38 app/templates/submit.html:94
-msgid "Other"
-msgstr "その他"
-
-#: app/templates/contact.html:42
-msgid "If Other, Please Specify"
-msgstr "その他の場合は内容をご記入ください"
-
-#: app/templates/contact.html:44
-msgid "Add a short subject or purpose"
-msgstr "件名または目的を簡潔にご記入ください"
-
-#: app/templates/contact.html:47
-msgid "Message"
-msgstr "メッセージ"
-
-#: app/templates/contact.html:49
-msgid "Tell us how we can help..."
-msgstr "どのようなお手伝いが必要かご記入ください..."
-
-#: app/templates/contact.html:51
-msgid "Send"
-msgstr "送信"
-
-#: app/templates/contact.html:58
-msgid "Contact Information"
-msgstr "連絡先情報"
-
-#: app/templates/contact.html:59
-msgid "Hours of Operation:"
-msgstr "対応時間:"
-
-#: app/templates/contact.html:59
-msgid "Monday to Friday, 9:00 AM to 5:30 PM"
-msgstr "月曜日から金曜日、午前9時から午後5時30分まで"
-
-#: app/templates/contact.html:60
-msgid "Expected Response Time:"
-msgstr "返信予定時間:"
-
-#: app/templates/contact.html:60
-msgid "We aim to respond to calls and emails within 1 to 2 business days."
-msgstr "お電話やメールには1〜2営業日以内の返信を目指しています。"
-
-#: app/templates/contact.html:61
-msgid "Phone:"
-msgstr "電話:"
-
-#: app/templates/contact.html:62
-msgid "Email:"
-msgstr "メール:"
-
-#: app/templates/contact.html:68
-msgid "Social Media"
-msgstr "ソーシャルメディア"
-
-#: app/templates/contact.html:70
-msgid "Instagram"
-msgstr "インスタグラム"
-
-#: app/templates/contact.html:71
-msgid "Facebook"
-msgstr "フェイスブック"
-
-#: app/templates/contact.html:72
-msgid "LinkedIn"
-msgstr "リンクトイン"
-
-#: app/templates/contact.html:79
-msgid "Helpful Resources"
-msgstr "役立つリソース"
-
-#: app/templates/contact.html:80
-msgid "While you wait, these pages may answer common questions."
-msgstr "お待ちいただく間に、これらのページでよくある質問への回答をご確認いただけます。"
-
-#: app/templates/contact.html:82 app/templates/thank_you.html:26
-msgid "View FAQs"
-msgstr "よくある質問を見る"
-
-#: app/templates/contact.html:83
-msgid "Artwork Submission Guide"
-msgstr "作品応募ガイド"
-
-#: app/templates/contact.html:84
-msgid "Current Exhibitions"
-msgstr "現在の展覧会"
-
-#: app/templates/events.html:8
-msgid "Explore upcoming exhibitions, talks, and cultural programs."
-msgstr "今後開催される展覧会、講演会、文化プログラムをご覧ください。"
-
-#: app/templates/events.html:21
-msgid "Seasonal Exhibition"
-msgstr "季節展"
-
-#: app/templates/events.html:22 app/templates/events.html:31
-#: app/templates/events.html:40
-msgid "Date:"
-msgstr "日付："
-
-#: app/templates/events.html:22
-msgid "12 May 2026"
-msgstr "2026年5月12日"
-
-#: app/templates/events.html:23
-msgid "A curated showcase of contemporary works from featured artists."
-msgstr "注目のアーティストによる現代作品を集めた厳選された展示。"
-
-#: app/templates/events.html:30
-msgid "Artist Talk"
-msgstr "アーティストトーク"
-
-#: app/templates/events.html:31
-msgid "26 May 2026"
-msgstr "2026年5月26日"
-
-#: app/templates/events.html:32
-msgid "Join an open discussion with guest artists about process and inspiration."
-msgstr "ゲストアーティストと共に、制作過程やインスピレーションについて語り合うオープンディスカッションにご参加ください。"
-
-#: app/templates/events.html:39
-msgid "Community Workshop"
-msgstr "コミュニティワークショップ"
-
-#: app/templates/events.html:40
-msgid "9 June 2026"
-msgstr "2026年6月9日"
-
-#: app/templates/events.html:41
-msgid "Hands-on creative workshop open to students and local communities."
-msgstr "学生や地域住民を対象とした、実践的な創作ワークショップ。"
-
-#: app/templates/faq.html:7
-msgid "Frequently Asked Questions"
-msgstr "よくある質問"
-
-#: app/templates/faq.html:8
-msgid "Quick answers to common visitor, artist, and submission questions."
-msgstr "来場者、アーティスト、作品応募に関するよくある質問への簡潔な回答です。"
-
-#: app/templates/faq.html:23
-msgid "How long does it take to receive a reply?"
-msgstr "返信を受け取るまでどのくらいかかりますか？"
-
-#: app/templates/faq.html:28
-msgid ""
-"We usually respond within 1 to 2 business days. Messages sent outside "
-"office hours are handled on the next working day."
-msgstr "通常は1〜2営業日以内に返信します。営業時間外に送信されたメッセージは翌営業日に対応します。"
-
-#: app/templates/faq.html:35
-msgid "What should I include in an artwork submission?"
-msgstr "作品応募には何を含めるべきですか？"
-
-#: app/templates/faq.html:40
-msgid ""
-"Please include your contact details, artwork title, medium, year, "
-"description, and at least one clear image. A portfolio and CV/resume can "
-"also be attached."
-msgstr "連絡先、作品タイトル、素材、制作年、説明、および鮮明な画像を少なくとも1点含めてください。ポートフォリオや職務経歴書も添付できます。"
-
-#: app/templates/faq.html:47
-msgid "Can I contact the gallery about partnerships or events?"
-msgstr "提携やイベントについてギャラリーに連絡できますか？"
-
-#: app/templates/faq.html:52
-msgid ""
-"Yes. Choose the partnership, collaboration, or events option in the "
-"contact form and include the relevant dates, audience, and proposal "
-"details."
-msgstr "はい。お問い合わせフォームで提携、コラボレーション、またはイベントの項目を選択し、関連日程、対象者、提案内容の詳細をご記入ください。"
-
-# --- contact.html ---
-#: app/templates/faq.html:59
-msgid "Contact the Team"
-msgstr "チームに連絡する"
-
-# --- gallery.html ---
-#: app/templates/gallery.html:16
-msgid "Gallery content coming soon."
-msgstr "ギャラリーのコンテンツは近日公開予定です。"
-
-# --- index.html ---
-#: app/templates/index.html:7
-msgid "Welcome to the Global Art Gallery"
-msgstr "グローバルアートギャラリーへようこそ"
-
-#: app/templates/index.html:8
-msgid "Celebrating art and culture from around the world."
-msgstr "世界中のアートと文化を讃えています。"
-
-#: app/templates/index.html:9
-msgid "Explore Gallery"
-msgstr "ギャラリーを探索"
-
-#: app/templates/index.html:18
-msgid "Featured Preview"
-msgstr "注目のプレビュー"
-
-#: app/templates/index.html:22
-msgid "Brief description of the first image goes here."
-msgstr "最初の画像の簡単な説明をここに記述します。"
-
-#: app/templates/index.html:27
-msgid "Brief description of the second image goes here."
-msgstr "2枚目の画像の簡単な説明をここに記載します。"
-
-#: app/templates/index.html:32
-msgid "Brief description of the third image goes here."
-msgstr "3枚目の画像の簡単な説明をここに記載します。"
-
-# --- submit.html ---
-#: app/templates/submit.html:7
-msgid "Submit Your Artwork"
-msgstr "作品を応募する"
-
-#: app/templates/submit.html:8
-msgid ""
-"Fill in the form below. Our team will review your submission and be in "
-"touch."
-msgstr "以下のフォームにご記入ください。担当者が内容を確認してご連絡いたします。"
-
-#: app/templates/submit.html:22
-msgid ""
-"Thank you! Your submission has been received. We will review it and get "
-"back to you."
-msgstr "ありがとうございます！応募を受け付けました。内容を確認後、ご連絡いたします。"
-
-#: app/templates/submit.html:33
-msgid "Artist Information"
-msgstr "アーティスト情報"
-
-#: app/templates/submit.html:37
-msgid "Full Name *"
-msgstr "氏名 *"
-
-#: app/templates/submit.html:41
-msgid "Email Address *"
-msgstr "メールアドレス *"
-
-#: app/templates/submit.html:47
-msgid "Phone Number"
-msgstr "電話番号"
-
-#: app/templates/submit.html:49
-msgid "Enter your contact number"
-msgstr "連絡先電話番号を入力してください"
-
-#: app/templates/submit.html:53
-msgid "Artist Statement"
-msgstr "アーティストステートメント"
-
-#: app/templates/submit.html:55
-msgid "Tell us about yourself and your artistic background..."
-msgstr "ご自身とあなたの芸術的な背景についてご紹介ください..."
-
-#: app/templates/submit.html:59
-msgid "Artist Portfolio"
-msgstr "アーティストポートフォリオ"
-
-#: app/templates/submit.html:62
-msgid ""
-"Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: "
-"20MB."
-msgstr "任意 — ポートフォリオのPDF、ZIP、または画像ファイルをアップロードしてください。最大サイズ：20MB。"
-
-#: app/templates/submit.html:66
-msgid "Artist CV / Resume"
-msgstr "アーティストの職務経歴書 / 履歴書"
-
-#: app/templates/submit.html:69
-msgid "Optional — upload your CV or resume in PDF or Word format. Max size: 10MB."
-msgstr "任意 — PDFまたはWord形式の職務経歴書をアップロードしてください。最大サイズ：10MB。"
-
-#: app/templates/submit.html:75
-msgid "Artwork Details"
-msgstr "作品詳細"
-
-#: app/templates/submit.html:78
-msgid "Artwork Title *"
-msgstr "作品タイトル *"
-
-#: app/templates/submit.html:84
-msgid "Medium / Type *"
-msgstr "素材 / ジャンル *"
-
-#: app/templates/submit.html:86
-msgid "Select a medium..."
-msgstr "素材を選択..."
-
-#: app/templates/submit.html:87
-msgid "Painting"
-msgstr "絵画"
-
-#: app/templates/submit.html:88
-msgid "Sculpture"
-msgstr "彫刻"
-
-#: app/templates/submit.html:89
-msgid "Photography"
-msgstr "写真"
-
-#: app/templates/submit.html:90
-msgid "Digital Art"
-msgstr "デジタルアート"
-
-#: app/templates/submit.html:91
-msgid "Printmaking"
-msgstr "版画"
-
-#: app/templates/submit.html:92
-msgid "Textile / Fibre"
-msgstr "テキスタイル"
-
-#: app/templates/submit.html:93
-msgid "Mixed Media"
-msgstr "ミクストメディア"
-
-#: app/templates/submit.html:98
-msgid "Year Created *"
-msgstr "制作年 *"
-
-#: app/templates/submit.html:105
-msgid "Description / Concept *"
-msgstr "説明 / コンセプト *"
-
-#: app/templates/submit.html:107
-msgid "Describe the artwork, its inspiration, and meaning..."
-msgstr "作品、インスピレーション、意味についてご説明ください..."
-
-#: app/templates/submit.html:112
-msgid "Upload Artwork Image *"
-msgstr "作品画像をアップロード *"
-
-#: app/templates/submit.html:115
-msgid "Accepted formats: JPG, PNG, WEBP. Max size: 10MB."
-msgstr "対応形式：JPG、PNG、WEBP。最大サイズ：10MB。"
-
-#: app/templates/submit.html:125
-msgid ""
-"I confirm that this is my original work and I consent to the gallery "
-"reviewing it for potential display. *"
-msgstr "これが私のオリジナル作品であることを確認し、ギャラリーによる審査に同意します。*"
-
-#: app/templates/submit.html:132
-msgid "Clear Form"
-msgstr "フォームをクリア"
-
-#: app/templates/submit.html:135
-msgid "Submit for Review"
-msgstr "審査に応募"
-
-#: app/templates/thank_you.html:7
-msgid "Thank You"
-msgstr "ありがとうございます"
-
-#: app/templates/thank_you.html:8
-msgid "Your enquiry has been received."
-msgstr "お問い合わせを受け付けました。"
-
-#: app/templates/thank_you.html:21
-msgid "We will be in touch soon"
-msgstr "近日中にご連絡いたします"
-
-#: app/templates/thank_you.html:22
-msgid ""
-"Thank you for contacting Global Art Gallery. Our team reviews enquiries "
-"during business hours and usually replies within 1 to 2 business days."
-msgstr ""
-"Global Art Gallery "
-"へお問い合わせいただきありがとうございます。担当チームが営業時間内に内容を確認し、通常1〜2営業日以内に返信いたします。"
-
-#: app/templates/thank_you.html:23
-msgid ""
-"If your question is urgent, you can also contact us by phone during our "
-"office hours or use the resources below."
-msgstr "お急ぎの場合は、営業時間内にお電話いただくか、以下のリソースもご利用ください。"
-
-#: app/templates/thank_you.html:25
-msgid "Back to Contact"
-msgstr "お問い合わせページに戻る"
-
-#~ msgid "Contact"
-#~ msgstr "お問い合わせ"
-
-#~ msgid "Submit Work"
-#~ msgstr "作品応募"
-
+#: app/templates/base.html:70 app/templates/gallery.html:7
+msgid "Catalog"
+msgstr "カタログ"
+
+#: app/templates/gallery.html:8
+msgid "A curated selection from the gallery collection."
+msgstr "ギャラリーコレクションから厳選された作品をご覧ください。"
+
+#: app/templates/gallery.html:28 app/templates/gallery.html:55
+#: app/templates/gallery.html:67 app/templates/gallery.html:79
+msgid "View Work"
+msgstr "作品を見る"
+
+#: app/templates/gallery.html:53 app/templates/gallery.html:54
+msgid "Featured work one"
+msgstr "注目作品1"
+
+#: app/templates/gallery.html:58
+msgid "Stillness in Branches"
+msgstr "枝の静寂"
+
+#: app/templates/gallery.html:59
+msgid "Mixed media, 2025"
+msgstr "ミクストメディア、2025年"
+
+#: app/templates/gallery.html:65 app/templates/gallery.html:66
+msgid "Featured work two"
+msgstr "注目作品2"
+
+#: app/templates/gallery.html:70
+msgid "Quiet Ground"
+msgstr "静かな大地"
+
+#: app/templates/gallery.html:71
+msgid "Ink and pigment, 2024"
+msgstr "インクと顔料、2024年"
+
+#: app/templates/gallery.html:77 app/templates/gallery.html:78
+msgid "Featured work three"
+msgstr "注目作品3"
+
+#: app/templates/gallery.html:82
+msgid "Light Between Leaves"
+msgstr "葉の間の光"
+
+#: app/templates/gallery.html:83
+msgid "Oil on canvas, 2026"
+msgstr "キャンバスに油彩、2026年"
+
+#: app/templates/gallery.html:89
+msgid "Live catalog data will appear here when painting records are connected."
+msgstr "絵画データが接続されると、ここにカタログ情報が表示されます。"
+
+#: app/templates/painting.html:30
+msgid "View All Works"
+msgstr "すべての作品を見る"

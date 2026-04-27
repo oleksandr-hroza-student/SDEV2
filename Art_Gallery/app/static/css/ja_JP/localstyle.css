@@ -1,73 +1,827 @@
-:root {
-    /* Japan: collectivist and moderate/high PD -> orderly, quiet hierarchy, refined restraint */
-    --site-bg: #f4f1eb;
-    --surface: #fbfaf8;
-    --surface-muted: #efebe4;
-    --text: #252220;
-    --text-muted: #5f5750;
-    --line: #d8d0c6;
-    --brand: #4b4037;
-    --brand-contrast: #fffefb;
+/* =========================================================
+   GALLERY DESIGN OVERRIDES — JAPANESE VERSION
+   Based on Irish version; adapted for Japanese aesthetics
+        - Elegant, restrained typography with a focus on verticality
+        - Muted, natural color palette inspired by sumi ink and washi paper
+        - Clean, minimalist layout with generous whitespace
+   ========================================================= */
 
-    --radius: 6px;
-    --font-body: "Yu Gothic UI", "Meiryo", "Noto Sans JP", sans-serif;
-    --font-heading: "Yu Mincho", "Hiragino Mincho ProN", serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap');
+
+
+/* =========================
+   Core Palette
+   ========================= */
+
+:root {
+    --bg: #f4efe8;
+    --bg-warm: #ede7dd;
+    --bg-card: #faf7f3;
+
+    --text: #2a2420;
+    --text-mid: #6b5f55;
+    --text-dim: #9e9188;
+
+    --line: #d8cfc3;
+
+    --accent: #3a2e28;
+    --gold: #5a6e7f;        /* sumi ink blue — replaces warm gold */
+    --white: #fffdf9;
+
+    --radius: 0px;          /* sharp corners throughout */
+    --transition: 0.22s ease;
 }
 
+
+/* =========================
+   Global reset
+   ========================= */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    line-height: 1.85;      /* more airy than Irish version */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   Header / Branding
+   ========================= */
+
 .site-heading {
-    margin: 2.2rem 0 1.4rem;
+    margin: 4rem 0 3rem;
 }
 
 .site-heading-upper {
-    letter-spacing: 0.1em;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;         /* wider spacing — evokes vertical type */
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    font-weight: 300;
 }
 
 .site-heading-lower {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0;
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================
+   Navbar (Bootstrap override)
+   ========================= */
+
+.navbar {
+    background: var(--bg);
+    border-bottom: 0.5px solid var(--line);     /* thinner border */
 }
 
 .navbar .nav-link {
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    padding: 0.42rem 0.8rem !important;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    color: var(--text-mid);
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    position: relative;
+    padding: 0;
+    transition: color var(--transition);
 }
 
-.navbar .navbar-nav {
-    gap: 0.2rem;
+.navbar .nav-link:hover {
+    color: var(--text);
 }
 
-.navbar .nav-item {
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width var(--transition);
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   Language dropdown
+   ========================= */
+
+.dropdown-menu {
+    background: var(--bg-card);
+    border: 0.5px solid var(--line);
+    border-radius: 0;
+}
+
+.dropdown-item {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    font-weight: 300;
+}
+
+.dropdown-item:hover {
+    background: var(--bg-warm);
+    color: var(--text);
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 0;               /* sharp corners */
+    padding: 0.65rem 1.5rem;
+    transition: all var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+    box-shadow: none;
+}
+
+
+/* =========================
+   Main content spacing
+   ========================= */
+
+main {
+    min-height: 60vh;
+    padding-bottom: 4rem;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    background: var(--bg);
+    border-top: 0.5px solid var(--line);
+    color: var(--text-mid);
+}
+
+.footer p {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+}
+
+.footer .small {
+    color: var(--text-dim);
+}
+
+
+/* =========================================================
+   CATALOG PAGE
+   ========================================================= */
+
+.page-header {
+    max-width: var(--max-w);
+    margin: 4rem auto 3rem;
+    padding: 0 2rem 2rem;
+    border-bottom: 0.5px solid var(--line);
+}
+
+.page-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.08em;
+    color: var(--text);
+}
+
+.page-sub {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.catalog-grid {
+    max-width: var(--max-w);
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-img-link {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;               /* sharp corners */
+    background: var(--bg-warm);
+    aspect-ratio: 4 / 5;
+}
+
+.catalog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.catalog-card:hover .catalog-img {
+    transform: scale(1.02);         /* more subtle zoom */
+    opacity: 0.9;
+}
+
+.catalog-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(42, 36, 32, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.catalog-overlay span {
+    color: var(--white);
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+}
+
+.catalog-img-link:hover .catalog-overlay {
+    opacity: 1;
+}
+
+.catalog-info {
+    padding: 1rem 0 0;
+}
+
+.catalog-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: 0.04em;
+}
+
+.catalog-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.catalog-material {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    margin-top: 0.2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.catalog-artist-wrap {
+    margin-top: 0.75rem;
+}
+
+.catalog-artist-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     position: relative;
 }
 
-.navbar .nav-item + .nav-item::before {
-    content: "";
+.catalog-artist-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+}
+
+.catalog-artist-name {
+    font-size: 0.82rem;
+    color: var(--text-mid);
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: transparent;
+    transition: color var(--transition),
+                text-decoration-color var(--transition);
+}
+
+.catalog-artist-link:hover .catalog-artist-name {
+    color: var(--text);
+    text-decoration-color: var(--text);
+}
+
+.catalog-artist-tooltip {
+    display: none;
     position: absolute;
+    bottom: calc(100% + 10px);
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 55%;
-    width: 1px;
-    background: color-mix(in srgb, var(--line) 90%, #ffffff);
+    width: 240px;
+    background: var(--text);
+    color: var(--white);
+    font-size: 0.78rem;
+    line-height: 1.65;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    pointer-events: none;
+    z-index: 20;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    background: color-mix(in srgb, var(--brand) 9%, #ffffff);
+.catalog-artist-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    border: 6px solid transparent;
+    border-top-color: var(--text);
 }
 
-.navbar .nav-link.is-active,
-.navbar .dropdown-toggle.is-active {
-    background: color-mix(in srgb, var(--brand) 14%, #ffffff);
-    color: var(--brand) !important;
+.catalog-artist-link:hover .catalog-artist-tooltip {
+    display: block;
 }
 
-.page-section {
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
+@media (max-width: 900px) {
+    .catalog-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   ARTIST PAGE
+   ========================================================= */
+
+.artist-page {
+    max-width: var(--max-w);
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+}
+
+.artist-page-header {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 4rem 0 3rem;
+    border-bottom: 0.5px solid var(--line);
+}
+
+.artist-page-photo-wrap {
+    position: sticky;
+    top: 88px;
+}
+
+.artist-page-photo {
+    width: 100%;
+    border-radius: 0;               /* sharp corners */
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.artist-page-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+
+.artist-page-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.artist-page-story {
+    font-size: 1rem;
+    line-height: 2;                 /* generous — meditative feel */
+    color: var(--text-mid);
+    max-width: 64ch;
+    font-weight: 300;
+}
+
+.artist-page-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 0 2rem;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dim);
+    letter-spacing: 0.12em;
+}
+
+.artist-page-divider::before,
+.artist-page-divider::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;                  /* very thin divider lines */
+    background: var(--line);
+    opacity: 0.5;
+}
+
+.artist-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.artist-work-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 0;               /* sharp corners */
+    background: var(--bg-warm);
+    transition: opacity var(--transition);
+    color: inherit;
+}
+
+.artist-work-card:hover {
+    opacity: 0.8;                   /* fade instead of lift */
+}
+
+.artist-work-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.artist-work-card:hover .artist-work-img {
+    transform: scale(1.02);
+}
+
+.artist-work-info {
+    padding: 0.75rem 1rem 1rem;
+}
+
+.artist-work-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: 0.04em;
+}
+
+.artist-work-material {
+    font-size: 0.78rem;
+    color: var(--text-mid);
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    letter-spacing: 0.06em;
+    font-weight: 300;
+    transition: color var(--transition);
+}
+
+.back-link:hover {
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    .artist-page-header {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .artist-page-photo-wrap {
+        position: static;
+        max-width: 220px;
+    }
+
+    .artist-works-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   PAINTING PAGE
+   ========================================================= */
+
+.painting-page {
+    max-width: var(--max-w);
+    margin: 3rem auto 5rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.painting-main-img {
+    width: 100%;
+    border-radius: 0;               /* sharp corners */
+    box-shadow: 0 8px 32px rgba(42, 36, 32, 0.08);  /* softer shadow */
+    background: var(--bg-warm);
+}
+
+.painting-info-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.painting-year {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.painting-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.painting-material {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.painting-size {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    margin-top: 0.25rem;
+    font-weight: 300;
+}
+
+.painting-desc {
+    margin-top: 1.75rem;
+    font-size: 0.95rem;
+    line-height: 2;                 /* generous line height */
+    color: var(--text-mid);
+    font-weight: 300;
+}
+
+.painting-artist-card {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+    border: 0.5px solid var(--line);    /* very thin border */
+    border-radius: 0;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.painting-artist-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.painting-artist-photo-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.painting-artist-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+}
+
+.painting-artist-bio-tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    width: 260px;
+    background: var(--text);
+    color: var(--white);
+    font-size: 0.78rem;
+    line-height: 1.65;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    z-index: 20;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.painting-artist-bio-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    border: 6px solid transparent;
+    border-top-color: var(--text);
+}
+
+.painting-artist-photo-wrap:hover .painting-artist-bio-tooltip {
+    display: block;
+}
+
+.painting-artist-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.2rem;
+    font-weight: 300;
+}
+
+.painting-artist-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    transition: color var(--transition);
+}
+
+.painting-artist-name:hover {
+    color: var(--gold);
+}
+
+@media (max-width: 900px) {
+    .painting-page {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* =========================================================
+   EVENTS PAGE
+   ========================================================= */
+
+.events-list {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-card {
+    padding: 2rem;
+    border: 0.5px solid var(--line);
+    border-radius: 0;               /* sharp corners */
+    background: var(--bg-card);
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    align-items: start;
+    position: relative;
+    transition: opacity var(--transition);
+}
+
+.event-card:hover {
+    opacity: 0.85;                  /* fade on hover — restrained */
+    box-shadow: none;
+}
+
+.event-highlight {
+    border-color: var(--gold);
+    background: #faf7f3;
+}
+
+.event-badge {
+    position: absolute;
+    top: -11px;
+    left: 2rem;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 0;
+    font-weight: 400;
+}
+
+.event-date-col {
+    text-align: right;
+    padding-top: 0.1rem;
+}
+
+.event-date {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: 0.04em;
+}
+
+.event-time {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    margin-top: 0.2rem;
+    font-weight: 300;
+}
+
+.event-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+}
+
+.event-location {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+
+.event-desc {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.85;
+    font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .event-date-col {
+        text-align: left;
+    }
 }

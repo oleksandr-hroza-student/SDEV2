@@ -25,6 +25,14 @@ def set_session_language():
         session['language'] = 'en_IE'
 
 
+@app.context_processor
+def inject_gallery_data():
+    return {
+        'artists': artists,
+        'paintings': paintings,
+    }
+
+
 # -------------------------------
 # Main Routes
 # -------------------------------
@@ -41,7 +49,22 @@ def gallery():
 
 @app.route('/artists')
 def artists_page():
-    return render_template("artists.html")
+    featured_id = request.args.get('artist_id') or next(iter(artists))
+    artist = artists.get(featured_id)
+    if not artist:
+        return redirect('/gallery')
+
+    works = [
+        paintings[w]
+        for w in artist.get('works', [])
+        if w in paintings
+    ]
+
+    return render_template(
+        'artists.html',
+        artist=artist,
+        works=works
+    )
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -71,6 +94,42 @@ def art():
     return render_template("art.html")
 
 
+@app.route('/painting/<painting_id>')
+def painting(painting_id):
+    painting = paintings.get(painting_id)
+    if not painting:
+        return redirect('/gallery')
+
+    artist = artists.get(painting.get('artist_id'))
+    if not artist:
+        return redirect('/gallery')
+
+    return render_template(
+        'painting.html',
+        painting=painting,
+        artist=artist
+    )
+
+
+@app.route('/artist/<artist_id>')
+def artist(artist_id):
+    artist = artists.get(artist_id)
+    if not artist:
+        return redirect('/gallery')
+
+    works = [
+        paintings[w]
+        for w in artist.get('works', [])
+        if w in paintings
+    ]
+
+    return render_template(
+        'artists.html',
+        artist=artist,
+        works=works
+    )
+
+
 # -------------------------------
 # Artwork Submission Route
 # -------------------------------
@@ -82,24 +141,3 @@ def submit():
     return render_template("submit.html")
 
 
-# -------------------------------
-# Artist Detail Page
-# -------------------------------
-@app.route('/artist/<artist_id>')
-def artist_detail(artist_id):
-    artist = artists.get(artist_id)
-    if not artist:
-        return redirect('/catalog')
-
-    works = [
-        paintings[w]
-        for w in artist.get('works', [])
-        if w in paintings
-    ]
-
-    return render_template(
-        'artist.html',
-        artist=artist,
-        works=works
-    )
-    return render_template('artist.html')
