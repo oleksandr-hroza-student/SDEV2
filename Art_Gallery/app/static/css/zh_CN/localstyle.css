@@ -838,3 +838,113 @@ main {
         text-align: left;
     }
 }
+
+
+/*
+Index china
+*/
+
+.events-box {
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+}
+
+.event-card {
+    border-radius: 6px;
+    background: var(--bg-card);
+}
+
+.events-header h3 {
+    font-weight: 700;
+}
+
+/* =========================
+   Artist Statement Strip — Chinese (zh_CN)
+   ========================= */
+
+.artist-statement-strip {
+    padding: 1rem 0 2.25rem;
+}
+
+.artist-statement-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--bg-card), #fffaf6);
+    box-shadow: 0 8px 24px rgba(42, 36, 32, 0.07);
+}
+
+/* photo */
+.artist-statement-photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--line);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* content */
+.artist-statement-content {
+    flex: 1;
+}
+
+/* label */
+.artist-statement-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.35rem;
+}
+
+/* name (serif works well for Chinese names in large sizes) */
+.artist-statement-name {
+    display: inline-block;
+    font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+    font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 0.55rem;
+    transition: color var(--transition);
+    text-decoration: none;
+}
+
+.artist-statement-name:hover {
+    color: var(--gold);
+}
+
+/* statement text — sans serif for readable body text */
+.artist-statement-text {
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--text-mid);
+    margin: 0;
+    max-width: 68ch;
+    /* CJK wrapping behavior */
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .artist-statement-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+
+    .artist-statement-photo {
+        width: 72px;
+        height: 72px;
+    }
+
+    .artist-statement-name {
+        font-size: 1.25rem;
+    }
+}

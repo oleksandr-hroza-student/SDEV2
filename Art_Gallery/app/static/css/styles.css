@@ -164,3 +164,140 @@ h6 {
         margin: 1.4rem 0 1rem;
     }
 }
+
+
+/* Home: Upcoming events section */
+.upcoming-events {
+    padding-top: 1rem;
+}
+
+.events-box {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.events-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.events-header h3 {
+    margin-bottom: 0.35rem;
+}
+
+.events-header p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.event-card {
+    height: 100%;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card h5 {
+    color: var(--brand);
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+}
+
+.event-card p:last-child {
+    margin-bottom: 0;
+    color: var(--text-muted);
+}
+
+.event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .events-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* =========================
+   Homepage Call-to-Action Banner
+   ========================= */
+
+.home-cta {
+    padding: 1rem 0 3rem;
+}
+
+.home-cta-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.8rem 2rem;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--bg-card), #fff8ef);
+    box-shadow: 0 10px 28px rgba(42, 36, 32, 0.08);
+}
+
+.home-cta-copy {
+    flex: 1;
+}
+
+.home-cta-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+}
+
+.home-cta-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+}
+
+.home-cta-text {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: var(--text-mid);
+    max-width: 70ch;
+    margin: 0;
+}
+
+.home-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .home-cta-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .home-cta-actions {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}

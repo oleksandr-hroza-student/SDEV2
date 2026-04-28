@@ -2,36 +2,155 @@
 
 {% block hero %}
 <section class="page-section clearfix">
-  <div class="container">
-    <div class="intro text-center">
-      <h2 class="intro-heading mb-4">{{ _('Welcome to the Global Art Gallery') }}</h2>
-      <p class="intro-lead-in mb-4">{{ _('Celebrating art and culture from around the world.') }}</p>
-      <a class="btn btn-primary btn-lg" href="/gallery">{{ _('Explore Gallery') }}</a>
+    <div class="container">
+        <div class="intro text-center">
+            <h2 class="intro-heading mb-4">{{ _('Welcome to the Global Art Gallery') }}</h2>
+            <p class="intro-lead-in mb-4">{{ _('Celebrating art and culture from around the world.') }}</p>
+            <a class="btn btn-primary btn-lg" href="/gallery">{{ _('Explore Catalog') }}</a>
+        </div>
     </div>
-  </div>
-</section>
-{% endblock %}
+      </section>
+      {% endblock %}
 
-{% block main %}
-<section class="page-section">
-  <div class="container">
-    <h3 class="text-center mb-4">{{ _('Featured Preview') }}</h3>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="/static/assets/img/tree1.png" alt="{{ _('Tree artwork 1') }}" />
-        <p>{{ _('Brief description of the first image goes here.') }}</p>
+      {% block main %}
+      <section class="page-section">
+        <div class="container">
+          <h3 class="text-center mb-4">{{ _('Featured Preview') }}</h3>
+          <div class="gallery">
+            <div class="gallery-item">
+                <img src="/static/assets/img/tree1.png" alt="Tree artwork 1" />
+                <p class="mb-2">
+                    <strong>{{ _('Author:') }}</strong>
+                    <a href="{{ url_for('artist', artist_id='aoife-murphy') }}" class="catalog-artist-link">
+                        <span class="catalog-artist-name">Aoife Murphy</span>
+                    </a>
+                </p>
+                <p class="mb-0">
+                    {{ _('A windswept oak stands against a pale sky, its branches twisting like brushstrokes of memory and resilience.') }}
+                </p>
+            </div>
+
+
+          <div class="gallery-item">
+               <img src="/static/assets/img/tree2.png" alt="Tree artwork 2" />
+               <p class="mb-2">
+                   <strong>{{ _('Author:') }}</strong>
+                   <a href="{{ url_for('artist', artist_id='kenji-sato') }}" class="catalog-artist-link">
+                       <span class="catalog-artist-name">Kenji Sato</span>
+                   </a>
+               </p>
+               <p class="mb-0">
+                   {{ _('Soft layers of green and amber suggest a quiet forest at dusk, where light fades slowly and every leaf feels alive.') }}
+               </p>
+           </div>
+
+            <div class="gallery-item">
+               <img src="/static/assets/img/tree2.png" alt="Tree artwork 3" />
+               <p class="mb-2">
+                   <strong>{{ _('Author:') }}</strong>
+                   <a href="{{ url_for('artist', artist_id='mei-lin-zhang') }}" class="catalog-artist-link">
+                       <span class="catalog-artist-name">Mei Lin Zhang</span>
+                   </a>
+               </p>
+               <p class="mb-0">
+                   {{ _('A dreamlike study of texture and shadow, this piece captures the stillness of nature just before evening rain.') }}
+               </p>
+           </div>
+
+        </div>
+
+        </div>
+      </section>
+
+      <section class="page-section artist-statement-strip">
+        <div class="container">
+          <div class="artist-statement-card">
+            <div class="artist-statement-photo-wrap">
+              <img
+                src="/static/assets/img/tree2.png"
+                alt="Kenji Sato"
+                class="artist-statement-photo"
+              />
+            </div>
+
+            <div class="artist-statement-content">
+              <p class="artist-statement-label">{{ _('Artist Statement') }}</p>
+
+              <a href="{{ url_for('artist', artist_id='kenji-sato') }}" class="artist-statement-name">
+                Kenji Sato
+              </a>
+
+              <p class="artist-statement-text">
+                {{ _("I’m proud to present my work on Global Art Gallery — a thoughtful platform that champions quieter voices and gives artists the space to show, reflect, and connect. Here my pieces meet curious viewers from many places, and each new conversation opens the door to collaboration and discovery.") }}
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="page-section upcoming-events">
+      <div class="container">
+        <div class="events-box">
+          <div class="events-header">
+            <div>
+              <h3>{{ _('Events') }}</h3>
+              <p>{{ _('Explore upcoming exhibitions, talks, and cultural programs.') }}</p>
+            </div>
+            <a class="btn btn-outline-primary" href="/events">{{ _('Events') }}</a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <article class="event-card">
+                <h5>{{ _('Spring Auction') }}</h5>
+                <p><strong>{{ _('Date:') }}</strong> {{ _('April 18, 2026') }}</p>
+                <p>{{ _('Our spring auction features selected works from the permanent collection alongside new submissions from emerging artists.') }}</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="event-card">
+                <h5>{{ _('Artist Talk: Kenji Sato') }}</h5>
+                <p><strong>{{ _('Date:') }}</strong> {{ _('May 29, 2026') }}</p>
+                <p>{{ _('Join Kenji Sato for an intimate conversation about memory, language, and abstract expressionism.') }}</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="event-card">
+                <h5>{{ _('Open Studio Weekend') }}</h5>
+                <p><strong>{{ _('Date:') }}</strong> {{ _('June 8–9, 2026') }}</p>
+                <p>{{ _('The gallery opens all studio spaces to the public with free admission. Artists will be present throughout the weekend.') }}</p>
+              </article>
+            </div>
+
+
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="gallery-item">
-        <img src="/static/assets/img/tree2.png" alt="{{ _('Tree artwork 2') }}" />
-        <p>{{ _('Brief description of the second image goes here.') }}</p>
-      </div>
+  <section class="page-section home-cta">
+    <div class="container">
+      <div class="home-cta-banner">
+        <div class="home-cta-copy">
+          <p class="home-cta-label">{{ _('Get Involved') }}</p>
+          <h3 class="home-cta-title">{{ _('Explore the gallery, meet the artists, and share your own work.') }}</h3>
+          <p class="home-cta-text">
+            {{ _('Discover new exhibitions, learn about the artists behind each piece, and submit your artwork to be part of our growing collection.') }}
+          </p>
+        </div>
 
-      <div class="gallery-item">
-        <img src="/static/assets/img/tree2.png" alt="{{ _('Tree artwork 3') }}" />
-        <p>{{ _('Brief description of the third image goes here.') }}</p>
+        <div class="home-cta-actions">
+          <a class="btn btn-primary" href="/gallery">{{ _('Explore Gallery') }}</a>
+          <a class="btn btn-outline-primary" href="/submit">{{ _('Submit Your Art') }}</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-{% endblock %}
+  </section>
+
+
+
+      {% endblock %}
