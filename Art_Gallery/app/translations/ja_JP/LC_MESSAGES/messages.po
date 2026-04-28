@@ -5,18 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-28 12:58+0100\n"
-"PO-Revision-Date: 2026-04-28 12:58+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja_JP\n"
-"Language-Team: ja_JP <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Project-Id-Version: PROJECT VERSION\nReport-Msgid-Bugs-To: EMAIL@ADDRESS\nPOT-Creation-Date: 2026-04-28 12:58+0100\nPO-Revision-Date: 2026-04-28 12:58+0100\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage: ja_JP\nLanguage-Team: ja_JP <LL@li.org>\nPlural-Forms: nplurals=1; plural=0;\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\nGenerated-By: Babel 2.18.0\n"
 
 #: artistdata.py:12
 msgid "An Irish mixed‑media artist exploring stillness and organic form."
@@ -24,19 +13,9 @@ msgstr "静けさと有機的なフォルムを探求するアイルランドの
 
 #: artistdata.py:14
 msgid ""
-"Aoife Murphy was born in Cork, Ireland, and builds her mixed-media work "
-"from the quiet details of the natural world. She combines ink, bark "
-"textures, pressed foliage, and handmade paper to create layered surfaces "
-"that feel collected rather than composed. Her practice begins with "
-"sketchbooks filled during long walks through woodland paths and coastal "
-"edges, where she studies how weather changes the tone of a place. Aoife "
-"is drawn to the spaces between things: the pause before movement, the "
-"hollow under roots, and the thin light that settles after rain."
+"Aoife Murphy was born in Cork, Ireland, and builds her mixed-media work from the quiet details of the natural world. She combines ink, bark textures, pressed foliage, and handmade paper to create layered surfaces that feel collected rather than composed. Her practice begins with sketchbooks filled during long walks through woodland paths and coastal edges, where she studies how weather changes the tone of a place. Aoife is drawn to the spaces between things: the pause before movement, the hollow under roots, and the thin light that settles after rain."
 msgstr ""
-"アイフェ・マーフィーはアイルランドのコークに生まれ、自然界の静かなディテールからミクストメディア作品を構築しています。"
-"インク、樹皮のテクスチャー、押し花、手漉き紙を組み合わせ、構成されたというよりも収集されたかのような層状の表面を生み出します。"
-"彼女の制作は、森の小道や海岸沿いを長く歩きながらスケッチブックを埋めることから始まり、天候がその場所の雰囲気をどのように変えるかを観察しています。"
-"アイフェは物と物の間にある空間—動き出す前の静止、根の下の空洞、雨上がりに差し込む薄い光—に惹かれています。"
+"アイフェ・マーフィーはアイルランドのコークに生まれ、自然界の静かなディテールからミクストメディア作品を構築しています。インク、樹皮のテクスチャー、押し花、手漉き紙を組み合わせ、構成されたというよりも収集されたかのような層状の表面を生み出します。彼女の制作は、森の小道や海岸沿いを長く歩きながらスケッチブックを埋めることから始まり、天候がその場所の雰囲気をどのように変えるかを観察しています。アイフェは物と物の間にある空間—動き出す前の静止、根の下の空洞、雨上がりに差し込む薄い光—に惹かれています。"
 
 #: artistdata.py:26
 msgid "A Kyoto‑based painter blending abstraction with calligraphic gesture."
@@ -44,17 +23,9 @@ msgstr "抽象と書の筆致を融合させる京都在住の画家。"
 
 #: artistdata.py:28
 msgid ""
-"Kenji Sato was born in 1971 in Kyoto, Japan. His work sits at the "
-"boundary between contemporary abstraction and traditional brush practice."
-" His paintings emphasize balance, negative space, and rhythm. Kenji "
-"paints his experiences of nature and memory, often drawing on the "
-"aesthetics of wabi-sabi and yūgen. He enjoys making his thoughts visible "
-"through the process of painting, allowing for spontaneity and "
-"imperfection to guide the final composition."
+"Kenji Sato was born in 1971 in Kyoto, Japan. His work sits at the boundary between contemporary abstraction and traditional brush practice. His paintings emphasize balance, negative space, and rhythm. Kenji paints his experiences of nature and memory, often drawing on the aesthetics of wabi-sabi and yūgen. He enjoys making his thoughts visible through the process of painting, allowing for spontaneity and imperfection to guide the final composition."
 msgstr ""
-"佐藤健二は1971年に京都で生まれました。彼の作品は現代の抽象と伝統的な筆遣いの境界に位置しています。"
-"絵画ではバランス、余白、リズムを重視し、自然や記憶の体験を描き、しばしば侘び寂びや幽玄の美学を取り入れています。"
-"彼は絵を描く過程で自身の思考を可視化することを楽しみ、自発性と不完全さに最終的な構成を委ねています。"
+"佐藤健二は1971年に京都で生まれました。彼の作品は現代の抽象と伝統的な筆遣いの境界に位置しています。絵画ではバランス、余白、リズムを重視し、自然や記憶の体験を描き、しばしば侘び寂びや幽玄の美学を取り入れています。彼は絵を描く過程で自身の思考を可視化することを楽しみ、自発性と不完全さに最終的な構成を委ねています。"
 
 #: artistdata.py:38
 msgid "A Spanish painter working with light, pigment, and restrained colour."
@@ -62,42 +33,20 @@ msgstr "光、顔料、抑制された色彩を用いるスペインの画家。
 
 #: artistdata.py:40
 msgid ""
-"Lucía Fernández was born in Valencia, Spain, and paints interiors, "
-"thresholds, and unguarded moments of stillness. She works with thin veils"
-" of oil and pigment, building colour slowly so that the surface holds the"
-" trace of every adjustment. Her compositions often begin from a "
-"remembered room or a patch of afternoon light, then move toward something"
-" more intimate and reflective. Lucía keeps her palette restrained so that"
-" slight shifts in warmth, shadow, and reflection carry the emotional "
-"weight of the piece."
+"Lucía Fernández was born in Valencia, Spain, and paints interiors, thresholds, and unguarded moments of stillness. She works with thin veils of oil and pigment, building colour slowly so that the surface holds the trace of every adjustment. Her compositions often begin from a remembered room or a patch of afternoon light, then move toward something more intimate and reflective. Lucía keeps her palette restrained so that slight shifts in warmth, shadow, and reflection carry the emotional weight of the piece."
 msgstr ""
-"ルシア・フェルナンデスはスペインのバレンシアに生まれ、室内、境界、無防備な静寂の瞬間を描いています。"
-"薄い油彩と顔料の層を重ね、ゆっくりと色を構築することで、すべての調整の痕跡を画面に留めています。"
-"彼女の構図は記憶の中の部屋や午後の光の一片から始まり、やがてより親密で内省的なものへと向かいます。"
-"ルシアはパレットを抑制し、温かみ、影、反射のわずかな変化が作品の感情的な重みを担うようにしています。"
+"ルシア・フェルナンデスはスペインのバレンシアに生まれ、室内、境界、無防備な静寂の瞬間を描いています。薄い油彩と顔料の層を重ね、ゆっくりと色を構築することで、すべての調整の痕跡を画面に留めています。彼女の構図は記憶の中の部屋や午後の光の一片から始まり、やがてより親密で内省的なものへと向かいます。ルシアはパレットを抑制し、温かみ、影、反射のわずかな変化が作品の感情的な重みを担うようにしています。"
 
 #: artistdata.py:52
 msgid ""
-"A Chinese painter blending ink traditions with contemporary landscape "
-"memory."
+"A Chinese painter blending ink traditions with contemporary landscape memory."
 msgstr "水墨の伝統と現代の風景の記憶を融合させる中国の画家。"
 
 #: artistdata.py:54
 msgid ""
-"Mei Lin Zhang was born in Hangzhou, China, and works between traditional "
-"ink painting and contemporary mixed media. Her paintings often begin with"
-" field notes taken beside rivers, old gardens, and quiet stone paths, "
-"then evolve into layered compositions that balance atmosphere and "
-"structure. She is interested in how memory changes the shape of a "
-"landscape, and how a single line can suggest both distance and intimacy. "
-"Mei Lin's practice is grounded in patience, repetition, and close "
-"attention to the surfaces where water, paper, and pigment meet."
+"Mei Lin Zhang was born in Hangzhou, China, and works between traditional ink painting and contemporary mixed media. Her paintings often begin with field notes taken beside rivers, old gardens, and quiet stone paths, then evolve into layered compositions that balance atmosphere and structure. She is interested in how memory changes the shape of a landscape, and how a single line can suggest both distance and intimacy. Mei Lin's practice is grounded in patience, repetition, and close attention to the surfaces where water, paper, and pigment meet."
 msgstr ""
-"張美林は中国の杭州に生まれ、伝統的な水墨画と現代のミクストメディアの間で制作しています。"
-"彼女の絵画は川のほとり、古い庭園、静かな石畳の小道で取ったフィールドノートから始まり、"
-"やがて雰囲気と構造のバランスを取る層状の構成へと展開します。"
-"記憶が風景の形をどのように変えるか、一本の線がいかに距離と親密さの両方を示唆できるかに関心を持っています。"
-"美林の制作は忍耐、反復、そして水・紙・顔料が出会う表面への細やかな注意に根ざしています。"
+"張美林は中国の杭州に生まれ、伝統的な水墨画と現代のミクストメディアの間で制作しています。彼女の絵画は川のほとり、古い庭園、静かな石畳の小道で取ったフィールドノートから始まり、やがて雰囲気と構造のバランスを取る層状の構成へと展開します。記憶が風景の形をどのように変えるか、一本の線がいかに距離と親密さの両方を示唆できるかに関心を持っています。美林の制作は忍耐、反復、そして水・紙・顔料が出会う表面への細やかな注意に根ざしています。"
 
 #: artistdata.py:70 templates/gallery.html:58
 msgid "Stillness in Branches"
@@ -109,8 +58,7 @@ msgstr "インクとミクストメディア"
 
 #: artistdata.py:76
 msgid ""
-"A quiet composition built from layered ink washes and brittle line work, "
-"suggesting suspended movement."
+"A quiet composition built from layered ink washes and brittle line work, suggesting suspended movement."
 msgstr "層状のインクウォッシュと繊細な線描から構成された静謐な作品で、宙に浮いた動きを示唆しています。"
 
 #: artistdata.py:85
@@ -147,8 +95,7 @@ msgstr "紙にインク、顔料、コラージュ"
 
 #: artistdata.py:119
 msgid ""
-"A textured study of damp edges, with fragmented marks suggesting the slow"
-" spread of moss along stone and wood."
+"A textured study of damp edges, with fragmented marks suggesting the slow spread of moss along stone and wood."
 msgstr "湿った縁のテクスチャーを探る習作で、断片的な跡が石や木に沿ってゆっくりと広がる苔を示唆しています。"
 
 #: artistdata.py:127
@@ -161,8 +108,7 @@ msgstr "手漉き紙にミクストメディア"
 
 #: artistdata.py:133
 msgid ""
-"Layered bark rubbings and ink washes create a dark, tactile surface "
-"shaped by shifting woodland shade."
+"Layered bark rubbings and ink washes create a dark, tactile surface shaped by shifting woodland shade."
 msgstr "層状の樹皮拓本とインクウォッシュが、移ろう森の木陰によって形作られた暗く触覚的な表面を生み出しています。"
 
 #: artistdata.py:141
@@ -175,8 +121,7 @@ msgstr "キャンバスにアクリルと墨"
 
 #: artistdata.py:147
 msgid ""
-"Large gestural strokes echo the movement of water without direct "
-"representation."
+"Large gestural strokes echo the movement of water without direct representation."
 msgstr "大胆な筆致が、直接的な描写なしに水の動きを反響させています。"
 
 #: artistdata.py:155
@@ -201,8 +146,7 @@ msgstr "リネンに油彩"
 
 #: artistdata.py:175
 msgid ""
-"Soft reflections and washed-out daylight capture the calm atmosphere of a"
-" room just after the storm clears."
+"Soft reflections and washed-out daylight capture the calm atmosphere of a room just after the storm clears."
 msgstr "やわらかな反射と淡い日差しが、嵐が去った直後の部屋の穏やかな雰囲気を捉えています。"
 
 #: artistdata.py:183
@@ -308,8 +252,7 @@ msgstr "© 2026 グローバル・アート・ギャラリー"
 
 #: templates/base.html:136
 msgid ""
-"Share your question in your own words. We will reply as clearly as "
-"possible."
+"Share your question in your own words. We will reply as clearly as possible."
 msgstr "ご質問をご自身の言葉でお聞かせください。できる限り分かりやすくお答えします。"
 
 #: templates/base.html:137
@@ -338,8 +281,7 @@ msgstr "作品を審査に提出しますか？"
 
 #: templates/contact.html:8
 msgid ""
-"Reach out with questions, partnership enquiries, artwork support "
-"requests, or media enquiries."
+"Reach out with questions, partnership enquiries, artwork support requests, or media enquiries."
 msgstr "ご質問、提携に関するお問い合わせ、作品投稿サポート、またはメディア関連のお問い合わせはお気軽にご連絡ください。"
 
 #: templates/contact.html:21
@@ -484,8 +426,7 @@ msgstr "ギャラリー、メインホール"
 
 #: templates/events.html:24
 msgid ""
-"Our spring auction features selected works from the permanent collection "
-"alongside new submissions from emerging artists."
+"Our spring auction features selected works from the permanent collection alongside new submissions from emerging artists."
 msgstr "春のオークションでは、常設コレクションからの厳選作品と新進アーティストの新作を展示します。"
 
 #: templates/events.html:36
@@ -498,8 +439,7 @@ msgstr "ギャラリー、リーディングルーム"
 
 #: templates/events.html:39
 msgid ""
-"Join Kenji Sato for an intimate conversation about memory, language, and "
-"abstract expressionism."
+"Join Kenji Sato for an intimate conversation about memory, language, and abstract expressionism."
 msgstr "佐藤健二と共に、記憶、言語、抽象表現主義について語り合う親密なトークにご参加ください。"
 
 #: templates/events.html:51
@@ -512,8 +452,7 @@ msgstr "ギャラリー、全フロア"
 
 #: templates/events.html:54
 msgid ""
-"The gallery opens all studio spaces to the public with free admission. "
-"Artists will be present throughout the weekend."
+"The gallery opens all studio spaces to the public with free admission. Artists will be present throughout the weekend."
 msgstr "ギャラリーの全スタジオスペースを無料で一般公開します。週末を通してアーティストが在廊します。"
 
 #: templates/events.html:66
@@ -526,8 +465,7 @@ msgstr "ギャラリー、エデュケーションスタジオ"
 
 #: templates/events.html:69
 msgid ""
-"A hands‑on workshop exploring basic printmaking techniques. Open to "
-"students and local community members."
+"A hands‑on workshop exploring basic printmaking techniques. Open to students and local community members."
 msgstr "基本的な版画技法を学ぶ体験型ワークショップです。学生や地域の方々にご参加いただけます。"
 
 #: templates/faq.html:7
@@ -544,8 +482,7 @@ msgstr "返信はどのくらいで届きますか？"
 
 #: templates/faq.html:28
 msgid ""
-"We usually respond within 1 to 2 business days. Messages sent outside "
-"office hours are handled on the next working day."
+"We usually respond within 1 to 2 business days. Messages sent outside office hours are handled on the next working day."
 msgstr "通常1〜2営業日以内に返信いたします。営業時間外のメッセージは翌営業日に対応されます。"
 
 #: templates/faq.html:35
@@ -554,9 +491,7 @@ msgstr "作品投稿には何を含める必要がありますか？"
 
 #: templates/faq.html:40
 msgid ""
-"Please include your contact details, artwork title, medium, year, "
-"description, and at least one clear image. A portfolio and CV/resume can "
-"also be attached."
+"Please include your contact details, artwork title, medium, year, description, and at least one clear image. A portfolio and CV/resume can also be attached."
 msgstr "連絡先、作品タイトル、素材、制作年、説明、および少なくとも1枚の鮮明な画像を含めてください。作品集や履歴書の添付も可能です。"
 
 #: templates/faq.html:47
@@ -565,9 +500,7 @@ msgstr "提携やイベントについて問い合わせることはできます
 
 #: templates/faq.html:52
 msgid ""
-"Yes. Choose the partnership, collaboration, or events option in the "
-"contact form and include the relevant dates, audience, and proposal "
-"details."
+"Yes. Choose the partnership, collaboration, or events option in the contact form and include the relevant dates, audience, and proposal details."
 msgstr "はい。お問い合わせフォームで該当する項目を選択し、日程、対象者、提案内容の詳細を記入してください。"
 
 #: templates/faq.html:59
@@ -673,14 +606,12 @@ msgstr "作品を投稿する"
 
 #: templates/submit.html:8
 msgid ""
-"Fill in the form below. Our team will review your submission and be in "
-"touch."
+"Fill in the form below. Our team will review your submission and be in touch."
 msgstr "以下のフォームにご記入ください。内容を確認のうえ、担当者よりご連絡いたします。"
 
 #: templates/submit.html:22
 msgid ""
-"Thank you! Your submission has been received. We will review it and get "
-"back to you."
+"Thank you! Your submission has been received. We will review it and get back to you."
 msgstr "ありがとうございます！投稿を受け付けました。内容を確認のうえ、ご連絡いたします。"
 
 #: templates/submit.html:33
@@ -717,8 +648,7 @@ msgstr "作品ポートフォリオ"
 
 #: templates/submit.html:62
 msgid ""
-"Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: "
-"20MB."
+"Optional — upload a PDF, ZIP, or image file of your portfolio. Max size: 20MB."
 msgstr "任意 — ポートフォリオ（PDF、ZIP、画像）をアップロードしてください。最大20MB。"
 
 #: templates/submit.html:66
@@ -795,8 +725,7 @@ msgstr "対応形式：JPG、PNG、WEBP。最大10MB。"
 
 #: templates/submit.html:125
 msgid ""
-"I confirm that this is my original work and I consent to the gallery "
-"reviewing it for potential display. *"
+"I confirm that this is my original work and I consent to the gallery reviewing it for potential display. *"
 msgstr "これは私のオリジナル作品であり、ギャラリーが展示の可否を検討することに同意します。*"
 
 #: templates/submit.html:132
@@ -821,14 +750,12 @@ msgstr "まもなくご連絡いたします"
 
 #: templates/thank_you.html:22
 msgid ""
-"Thank you for contacting Global Art Gallery. Our team reviews enquiries "
-"during business hours and usually replies within 1 to 2 business days."
+"Thank you for contacting Global Art Gallery. Our team reviews enquiries during business hours and usually replies within 1 to 2 business days."
 msgstr "グローバル・アート・ギャラリーにお問い合わせいただきありがとうございます。営業時間内に確認し、通常1〜2営業日以内に返信いたします。"
 
 #: templates/thank_you.html:23
 msgid ""
-"If your question is urgent, you can also contact us by phone during our "
-"office hours or use the resources below."
+"If your question is urgent, you can also contact us by phone during our office hours or use the resources below."
 msgstr "お急ぎの場合は、営業時間内にお電話でご連絡いただくか、以下のリソースをご利用ください。"
 
 #: templates/thank_you.html:25
