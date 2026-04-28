@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-04-28 12:58+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-04-28 12:58+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja_JP\n"
 "Language-Team: ja_JP <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: artistdata.py:12
 msgid "An Irish mixed‑media artist exploring stillness and organic form."
-msgstr ""
+msgstr "静けさと有機的なフォルムを探求するアイルランドのミクストメディア・アーティスト。"
 
 #: artistdata.py:14
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "is drawn to the spaces between things: the pause before movement, the "
 "hollow under roots, and the thin light that settles after rain."
 msgstr ""
+"アイフェ・マーフィーはアイルランドのコークに生まれ、自然界の静かなディテールからミクストメディア作品を構築しています。"
+"インク、樹皮のテクスチャー、押し花、手漉き紙を組み合わせ、構成されたというよりも収集されたかのような層状の表面を生み出します。"
+"彼女の制作は、森の小道や海岸沿いを長く歩きながらスケッチブックを埋めることから始まり、天候がその場所の雰囲気をどのように変えるかを観察しています。"
+"アイフェは物と物の間にある空間—動き出す前の静止、根の下の空洞、雨上がりに差し込む薄い光—に惹かれています。"
 
 #: artistdata.py:26
 msgid "A Kyoto‑based painter blending abstraction with calligraphic gesture."
-msgstr ""
+msgstr "抽象と書の筆致を融合させる京都在住の画家。"
 
 #: artistdata.py:28
 msgid ""
@@ -48,10 +52,13 @@ msgid ""
 "through the process of painting, allowing for spontaneity and "
 "imperfection to guide the final composition."
 msgstr ""
+"佐藤健二は1971年に京都で生まれました。彼の作品は現代の抽象と伝統的な筆遣いの境界に位置しています。"
+"絵画ではバランス、余白、リズムを重視し、自然や記憶の体験を描き、しばしば侘び寂びや幽玄の美学を取り入れています。"
+"彼は絵を描く過程で自身の思考を可視化することを楽しみ、自発性と不完全さに最終的な構成を委ねています。"
 
 #: artistdata.py:38
 msgid "A Spanish painter working with light, pigment, and restrained colour."
-msgstr ""
+msgstr "光、顔料、抑制された色彩を用いるスペインの画家。"
 
 #: artistdata.py:40
 msgid ""
@@ -64,12 +71,16 @@ msgid ""
 " slight shifts in warmth, shadow, and reflection carry the emotional "
 "weight of the piece."
 msgstr ""
+"ルシア・フェルナンデスはスペインのバレンシアに生まれ、室内、境界、無防備な静寂の瞬間を描いています。"
+"薄い油彩と顔料の層を重ね、ゆっくりと色を構築することで、すべての調整の痕跡を画面に留めています。"
+"彼女の構図は記憶の中の部屋や午後の光の一片から始まり、やがてより親密で内省的なものへと向かいます。"
+"ルシアはパレットを抑制し、温かみ、影、反射のわずかな変化が作品の感情的な重みを担うようにしています。"
 
 #: artistdata.py:52
 msgid ""
 "A Chinese painter blending ink traditions with contemporary landscape "
 "memory."
-msgstr ""
+msgstr "水墨の伝統と現代の風景の記憶を融合させる中国の画家。"
 
 #: artistdata.py:54
 msgid ""
@@ -79,135 +90,136 @@ msgid ""
 "then evolve into layered compositions that balance atmosphere and "
 "structure. She is interested in how memory changes the shape of a "
 "landscape, and how a single line can suggest both distance and intimacy. "
-"Mei Lin’s practice is grounded in patience, repetition, and close "
+"Mei Lin's practice is grounded in patience, repetition, and close "
 "attention to the surfaces where water, paper, and pigment meet."
 msgstr ""
+"張美林は中国の杭州に生まれ、伝統的な水墨画と現代のミクストメディアの間で制作しています。"
+"彼女の絵画は川のほとり、古い庭園、静かな石畳の小道で取ったフィールドノートから始まり、"
+"やがて雰囲気と構造のバランスを取る層状の構成へと展開します。"
+"記憶が風景の形をどのように変えるか、一本の線がいかに距離と親密さの両方を示唆できるかに関心を持っています。"
+"美林の制作は忍耐、反復、そして水・紙・顔料が出会う表面への細やかな注意に根ざしています。"
 
 #: artistdata.py:70 templates/gallery.html:58
 msgid "Stillness in Branches"
 msgstr "枝の静けさ"
 
 #: artistdata.py:73
-#, fuzzy
 msgid "Ink and mixed media"
-msgstr "ミクストメディア"
+msgstr "インクとミクストメディア"
 
 #: artistdata.py:76
 msgid ""
 "A quiet composition built from layered ink washes and brittle line work, "
 "suggesting suspended movement."
-msgstr ""
+msgstr "層状のインクウォッシュと繊細な線描から構成された静謐な作品で、宙に浮いた動きを示唆しています。"
 
 #: artistdata.py:85
-#, fuzzy
 msgid "Quiet Root"
-msgstr "静かな大地"
+msgstr "静かな根"
 
 #: artistdata.py:88
 msgid "Ink on handmade paper"
-msgstr ""
+msgstr "手漉き紙にインク"
 
 #: artistdata.py:91
 msgid "A minimal study of grounding forms and negative space."
-msgstr ""
+msgstr "地に根ざす形態と余白のミニマルな習作。"
 
 #: artistdata.py:99
 msgid "Fog Study"
-msgstr ""
+msgstr "霧の習作"
 
 #: artistdata.py:102
 msgid "Ink wash"
-msgstr ""
+msgstr "墨流し"
 
 #: artistdata.py:105
 msgid "An atmospheric work exploring diffusion and edge softness."
-msgstr ""
+msgstr "拡散と輪郭のやわらかさを探求する大気的な作品。"
 
 #: artistdata.py:113
 msgid "Moss Line"
-msgstr ""
+msgstr "苔の線"
 
 #: artistdata.py:116
 msgid "Ink, pigment, and collage on paper"
-msgstr ""
+msgstr "紙にインク、顔料、コラージュ"
 
 #: artistdata.py:119
 msgid ""
 "A textured study of damp edges, with fragmented marks suggesting the slow"
 " spread of moss along stone and wood."
-msgstr ""
+msgstr "湿った縁のテクスチャーを探る習作で、断片的な跡が石や木に沿ってゆっくりと広がる苔を示唆しています。"
 
 #: artistdata.py:127
 msgid "Shadow Bark"
-msgstr ""
+msgstr "影の樹皮"
 
 #: artistdata.py:130
 msgid "Mixed media on handmade paper"
-msgstr ""
+msgstr "手漉き紙にミクストメディア"
 
 #: artistdata.py:133
 msgid ""
 "Layered bark rubbings and ink washes create a dark, tactile surface "
 "shaped by shifting woodland shade."
-msgstr ""
+msgstr "層状の樹皮拓本とインクウォッシュが、移ろう森の木陰によって形作られた暗く触覚的な表面を生み出しています。"
 
 #: artistdata.py:141
 msgid "Silent River"
-msgstr ""
+msgstr "静かな川"
 
 #: artistdata.py:144
 msgid "Acrylic and sumi ink on canvas"
-msgstr ""
+msgstr "キャンバスにアクリルと墨"
 
 #: artistdata.py:147
 msgid ""
 "Large gestural strokes echo the movement of water without direct "
 "representation."
-msgstr ""
+msgstr "大胆な筆致が、直接的な描写なしに水の動きを反響させています。"
 
 #: artistdata.py:155
 msgid "Ink Memory"
-msgstr ""
+msgstr "墨の記憶"
 
 #: artistdata.py:158
-#, fuzzy
 msgid "Ink on canvas"
-msgstr "キャンバスに油彩、2026年"
+msgstr "キャンバスにインク"
 
 #: artistdata.py:161
 msgid "A meditative composition balancing repetition and interruption."
-msgstr ""
+msgstr "反復と中断のバランスを取る瞑想的な構成。"
 
 #: artistdata.py:169
 msgid "Window After Rain"
-msgstr ""
+msgstr "雨上がりの窓"
 
 #: artistdata.py:172
 msgid "Oil on linen"
-msgstr ""
+msgstr "リネンに油彩"
 
 #: artistdata.py:175
 msgid ""
 "Soft reflections and washed-out daylight capture the calm atmosphere of a"
 " room just after the storm clears."
-msgstr ""
+msgstr "やわらかな反射と淡い日差しが、嵐が去った直後の部屋の穏やかな雰囲気を捉えています。"
 
 #: artistdata.py:183
 msgid "Soft Afternoon"
-msgstr ""
+msgstr "やわらかな午後"
 
 #: artistdata.py:186
-#, fuzzy
 msgid "Oil on canvas"
-msgstr "キャンバスに油彩、2026年"
+msgstr "キャンバスに油彩"
 
 #: artistdata.py:189
 msgid "Muted tones capture the way daylight settles across an empty room."
-msgstr ""
+msgstr "抑えたトーンが、空の部屋に差し込む日差しの様子を捉えています。"
 
 #: templates/art.html:5
 msgid "Title"
-msgstr ""
+msgstr "タイトル"
 
 #: templates/art.html:10 templates/base.html:70 templates/gallery.html:7
 msgid "Catalog"
@@ -215,19 +227,19 @@ msgstr "カタログ"
 
 #: templates/art.html:15
 msgid "Art Piece 1"
-msgstr ""
+msgstr "作品 1"
 
 #: templates/art.html:16 templates/art.html:24 templates/art.html:32
 msgid "Add details about this piece."
-msgstr ""
+msgstr "この作品の詳細を追加してください。"
 
 #: templates/art.html:23
 msgid "Art Piece 2"
-msgstr ""
+msgstr "作品 2"
 
 #: templates/art.html:31
 msgid "Art Piece 3"
-msgstr ""
+msgstr "作品 3"
 
 #: templates/artists.html:11 templates/gallery.html:38
 #: templates/gallery.html:40 templates/painting.html:25
@@ -244,7 +256,7 @@ msgstr "カタログに戻る"
 
 #: templates/base.html:8
 msgid "Global Art Gallery showcasing culture across borders"
-msgstr ""
+msgstr "国境を越えて文化を紹介するグローバル・アート・ギャラリー"
 
 #: templates/base.html:10 templates/base.html:43
 msgid "Global Art Gallery"
@@ -298,19 +310,19 @@ msgstr "© 2026 グローバル・アート・ギャラリー"
 msgid ""
 "Share your question in your own words. We will reply as clearly as "
 "possible."
-msgstr ""
+msgstr "ご質問をご自身の言葉でお聞かせください。できる限り分かりやすくお答えします。"
 
 #: templates/base.html:137
 msgid "Use this form to present your work in your own voice."
-msgstr ""
+msgstr "このフォームでご自身の言葉で作品をご紹介ください。"
 
 #: templates/base.html:138
 msgid "Please complete this field."
-msgstr ""
+msgstr "この項目を入力してください。"
 
 #: templates/base.html:139
 msgid "Please enter a valid email address."
-msgstr ""
+msgstr "有効なメールアドレスを入力してください。"
 
 #: templates/base.html:140 templates/contact.html:44
 msgid "Add a short subject or purpose"
@@ -318,12 +330,11 @@ msgstr "件名または目的を簡単に入力してください"
 
 #: templates/base.html:141
 msgid "Send this message now?"
-msgstr ""
+msgstr "このメッセージを送信しますか？"
 
 #: templates/base.html:142
-#, fuzzy
 msgid "Submit your artwork for review now?"
-msgstr "作品を投稿する"
+msgstr "作品を審査に提出しますか？"
 
 #: templates/contact.html:8
 msgid ""
@@ -457,70 +468,67 @@ msgstr "現在の展示"
 
 #: templates/events.html:7
 msgid "Auctions, talks & open studios"
-msgstr ""
+msgstr "オークション、トークイベント、オープンスタジオ"
 
 #: templates/events.html:13
 msgid "Next Auction"
-msgstr ""
+msgstr "次回のオークション"
 
 #: templates/events.html:21
 msgid "Spring Auction"
-msgstr ""
+msgstr "春のオークション"
 
 #: templates/events.html:22
 msgid "Gallery, Main Hall"
-msgstr ""
+msgstr "ギャラリー、メインホール"
 
 #: templates/events.html:24
 msgid ""
 "Our spring auction features selected works from the permanent collection "
 "alongside new submissions from emerging artists."
-msgstr ""
+msgstr "春のオークションでは、常設コレクションからの厳選作品と新進アーティストの新作を展示します。"
 
 #: templates/events.html:36
-#, fuzzy
 msgid "Artist Talk: Kenji Sato"
-msgstr "アーティストトーク"
+msgstr "アーティストトーク：佐藤健二"
 
 #: templates/events.html:37
 msgid "Gallery, Reading Room"
-msgstr ""
+msgstr "ギャラリー、リーディングルーム"
 
 #: templates/events.html:39
 msgid ""
 "Join Kenji Sato for an intimate conversation about memory, language, and "
 "abstract expressionism."
-msgstr ""
+msgstr "佐藤健二と共に、記憶、言語、抽象表現主義について語り合う親密なトークにご参加ください。"
 
 #: templates/events.html:51
 msgid "Open Studio Weekend"
-msgstr ""
+msgstr "オープンスタジオ週末"
 
 #: templates/events.html:52
 msgid "Gallery, All Floors"
-msgstr ""
+msgstr "ギャラリー、全フロア"
 
 #: templates/events.html:54
 msgid ""
 "The gallery opens all studio spaces to the public with free admission. "
 "Artists will be present throughout the weekend."
-msgstr ""
+msgstr "ギャラリーの全スタジオスペースを無料で一般公開します。週末を通してアーティストが在廊します。"
 
 #: templates/events.html:66
-#, fuzzy
 msgid "Community Print Workshop"
-msgstr "コミュニティワークショップ"
+msgstr "コミュニティ版画ワークショップ"
 
 #: templates/events.html:67
 msgid "Gallery, Education Studio"
-msgstr ""
+msgstr "ギャラリー、エデュケーションスタジオ"
 
 #: templates/events.html:69
-#, fuzzy
 msgid ""
 "A hands‑on workshop exploring basic printmaking techniques. Open to "
 "students and local community members."
-msgstr "学生や地域コミュニティ向けの体験型クリエイティブワークショップです。"
+msgstr "基本的な版画技法を学ぶ体験型ワークショップです。学生や地域の方々にご参加いただけます。"
 
 #: templates/faq.html:7
 msgid "Frequently Asked Questions"
@@ -617,42 +625,39 @@ msgstr "作品データが連携されると、ここにカタログ情報が表
 
 #: templates/index.html:7
 msgid "Welcome to the Global Art Gallery"
-msgstr "グローバル・アート・ギャラリー"
+msgstr "グローバル・アート・ギャラリーへようこそ"
 
 #: templates/index.html:8
 msgid "Celebrating art and culture from around the world."
-msgstr ""
+msgstr "世界中のアートと文化を紹介します。"
 
 #: templates/index.html:9
 msgid "Explore Gallery"
-msgstr "アートギャラリー"
+msgstr "ギャラリーを見る"
 
 #: templates/index.html:18
 msgid "Featured Preview"
 msgstr "注目プレビュー"
 
 #: templates/index.html:21
-#, fuzzy
 msgid "Tree artwork 1"
-msgstr "作品を投稿する"
+msgstr "木のアート作品 1"
 
 #: templates/index.html:22
 msgid "Brief description of the first image goes here."
 msgstr "最初の画像の簡単な説明がここに入ります。"
 
 #: templates/index.html:26
-#, fuzzy
 msgid "Tree artwork 2"
-msgstr "作品を投稿する"
+msgstr "木のアート作品 2"
 
 #: templates/index.html:27
 msgid "Brief description of the second image goes here."
 msgstr "2番目の画像の簡単な説明がここに入ります。"
 
 #: templates/index.html:31
-#, fuzzy
 msgid "Tree artwork 3"
-msgstr "作品を投稿する"
+msgstr "木のアート作品 3"
 
 #: templates/index.html:32
 msgid "Brief description of the third image goes here."
@@ -660,7 +665,7 @@ msgstr "3番目の画像の簡単な説明がここに入ります。"
 
 #: templates/painting.html:30
 msgid "View All Works"
-msgstr "作品を見る"
+msgstr "すべての作品を見る"
 
 #: templates/submit.html:7
 msgid "Submit Your Artwork"
@@ -676,7 +681,7 @@ msgstr "以下のフォームにご記入ください。内容を確認のうえ
 msgid ""
 "Thank you! Your submission has been received. We will review it and get "
 "back to you."
-msgstr ""
+msgstr "ありがとうございます！投稿を受け付けました。内容を確認のうえ、ご連絡いたします。"
 
 #: templates/submit.html:33
 msgid "Artist Information"
@@ -730,7 +735,7 @@ msgstr "作品詳細"
 
 #: templates/submit.html:78
 msgid "Artwork Title *"
-msgstr "作品画像をアップロード *"
+msgstr "作品タイトル *"
 
 #: templates/submit.html:84
 msgid "Medium / Type *"
@@ -796,23 +801,23 @@ msgstr "これは私のオリジナル作品であり、ギャラリーが展示
 
 #: templates/submit.html:132
 msgid "Clear Form"
-msgstr ""
+msgstr "フォームをクリア"
 
 #: templates/submit.html:135
 msgid "Submit for Review"
-msgstr "作品を投稿する"
+msgstr "審査に提出する"
 
 #: templates/thank_you.html:7
 msgid "Thank You"
-msgstr ""
+msgstr "ありがとうございます"
 
 #: templates/thank_you.html:8
 msgid "Your enquiry has been received."
-msgstr ""
+msgstr "お問い合わせを受け付けました。"
 
 #: templates/thank_you.html:21
 msgid "We will be in touch soon"
-msgstr ""
+msgstr "まもなくご連絡いたします"
 
 #: templates/thank_you.html:22
 msgid ""
@@ -828,31 +833,4 @@ msgstr "お急ぎの場合は、営業時間内にお電話でご連絡いただ
 
 #: templates/thank_you.html:25
 msgid "Back to Contact"
-msgstr "カタログに戻る"
-
-#~ msgid "Explore upcoming exhibitions, talks, and cultural programs."
-#~ msgstr "今後の展示やトークイベント、文化プログラムをご覧ください。"
-
-#~ msgid "Seasonal Exhibition"
-#~ msgstr "季節の展示"
-
-#~ msgid "Date:"
-#~ msgstr "日付："
-
-#~ msgid "12 May 2026"
-#~ msgstr "2026年5月12日"
-
-#~ msgid "A curated showcase of contemporary works from featured artists."
-#~ msgstr "注目アーティストによる現代作品の厳選展示。"
-
-#~ msgid "26 May 2026"
-#~ msgstr "2026年5月26日"
-
-#~ msgid ""
-#~ "Join an open discussion with guest "
-#~ "artists about process and inspiration."
-#~ msgstr "ゲストアーティストと制作過程やインスピレーションについて語るオープンディスカッションに参加できます。"
-
-#~ msgid "9 June 2026"
-#~ msgstr "2026年6月9日"
-
+msgstr "お問い合わせに戻る"
