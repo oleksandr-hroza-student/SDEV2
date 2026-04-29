@@ -25,12 +25,13 @@
     --line: #d8cfc3;
 
     --accent: #3a2e28;
+    /* Blue accent similar to blue-grey tone of sumi ink used in Japanese calligraphy and ink wash painting */
+    /* Replaces gold from base version */
     --gold: #5a6e7f;
-    /* sumi ink blue — replaces warm gold */
     --white: #fffdf9;
 
+    /* Sharp corners are consistent feature of Japanese design across architecture, print and product design (Uncertainty Avoidance: precise, defined edges reflect Japan's high uncertainty avoidance) */
     --radius: 0px;
-    /* sharp corners throughout */
     --transition: 0.22s ease;
 }
 
@@ -42,10 +43,11 @@
 body {
     background: var(--bg);
     color: var(--text);
+    /* Font supports Japanese characters with noticeably lighter, more elegant stroke (Indulgence vs. Restraint: lighter stroke reflects Japan's restrained, understated design culture) */
     font-family: 'Noto Serif JP', serif;
+    /* Light weight (300) + increased line-height reflects 'ma' — Japanese concept of meaningful empty space and airiness in composition (Individualism vs. Collectivism) */
     font-weight: 300;
     line-height: 1.85;
-    /* more airy than Irish version */
 }
 
 a {
@@ -65,11 +67,12 @@ a {
 .site-heading-upper {
     font-family: 'Noto Serif JP', serif;
     font-size: 0.75rem;
+    /* Wider spacing reflects restrained, elegant approach; incorporates 'ma' principle of meaningful empty space */
     letter-spacing: 0.22em;
-    /* wider spacing — evokes vertical type */
     text-transform: uppercase;
     color: var(--gold);
     display: block;
+    /* Light weight (300) reflects Japan's restrained design culture and elegance */
     font-weight: 300;
 }
 
@@ -88,8 +91,8 @@ a {
 
 .navbar {
     background: var(--bg);
+    /* Thinner borders (0.5px) reflect Japanese value of restraint and understatement (wabi-sabi) (Indulgence vs. Restraint: embodying acceptance of simplicity over decoration) */
     border-bottom: 0.5px solid var(--line);
-    /* thinner border */
 }
 
 .navbar .nav-link {
@@ -114,6 +117,7 @@ a {
     left: 0;
     bottom: -6px;
     width: 0;
+    /* Thinner underline (1px) reflects wabi-sabi principle of restraint and understatement */
     height: 1px;
     background: var(--gold);
     transition: width var(--transition);
@@ -130,6 +134,7 @@ a {
 
 .dropdown-menu {
     background: var(--bg-card);
+    /* Thin border (0.5px) and sharp corners reflect Japanese restraint and precision (wabi-sabi and Uncertainty Avoidance) */
     border: 0.5px solid var(--line);
     border-radius: 0;
 }
@@ -155,8 +160,8 @@ a {
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+    /* Sharp corners (0px border-radius) are consistent feature of Japanese design (Uncertainty Avoidance: precise, defined edges) */
     border-radius: 0;
-    /* sharp corners */
     padding: 0.65rem 1.5rem;
     transition: all var(--transition);
 }
@@ -212,6 +217,7 @@ main {
 
 .footer {
     background: var(--bg);
+    /* Thinner border (0.5px) reflects wabi-sabi principle of restraint and understatement (Indulgence vs. Restraint) */
     border-top: 0.5px solid var(--line);
     color: var(--text-mid);
 }
@@ -219,6 +225,7 @@ main {
 .footer p {
     font-size: 0.85rem;
     letter-spacing: 0.04em;
+    /* Light weight (300) maintains consistent restrained aesthetic in footer */
     font-weight: 300;
 }
 
@@ -235,14 +242,17 @@ main {
     max-width: var(--max-w);
     margin: 4rem auto 3rem;
     padding: 0 2rem 2rem;
+    /* Thinner border (0.5px) reflects restraint and simplicity (wabi-sabi) */
     border-bottom: 0.5px solid var(--line);
 }
 
 .page-title {
     font-family: 'Noto Serif JP', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    /* Lighter font weight (400) reflects Japan's elegant, restrained approach to typography */
     font-weight: 400;
     line-height: 1.1;
+    /* Wider letter-spacing incorporates 'ma' principle of meaningful empty space */
     letter-spacing: 0.08em;
     color: var(--text);
 }
@@ -252,6 +262,7 @@ main {
     font-size: 0.9rem;
     color: var(--text-mid);
     font-style: italic;
+    /* Light weight (300) reflects Japan's restrained, understated design culture */
     font-weight: 300;
 }
 
@@ -272,8 +283,8 @@ main {
 .catalog-img-link {
     position: relative;
     overflow: hidden;
+    /* Sharp corners (0px border-radius) consistent with Japanese design across architecture, print and product design (Uncertainty Avoidance) */
     border-radius: 0;
-    /* sharp corners */
     background: var(--bg-warm);
     aspect-ratio: 4 / 5;
 }
@@ -286,8 +297,8 @@ main {
 }
 
 .catalog-card:hover .catalog-img {
+    /* More subtle animation (scale 1.02 instead of 1.04) reflects Japanese restraint in visual effects (Indulgence vs. Restraint) */
     transform: scale(1.02);
-    /* more subtle zoom */
     opacity: 0.9;
 }
 
@@ -307,9 +318,12 @@ main {
     font-size: 0.8rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    /* Light weight (300) reflects Japan's elegant, understated typography */
     font-weight: 300;
+    /* Thinner border reflects wabi-sabi principle of restraint and understatement */
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0.5rem 1rem;
+    /* Sharp corners consistent with Japanese design */
     border-radius: 0;
 }
 
@@ -339,6 +353,7 @@ main {
     color: var(--text-mid);
     margin-top: 0.2rem;
     font-style: italic;
+    /* Light weight (300) maintains consistency with Japanese restrained aesthetic throughout */
     font-weight: 300;
 }
 
@@ -365,6 +380,7 @@ main {
 .catalog-artist-name {
     font-size: 0.82rem;
     color: var(--text-mid);
+    /* Lighter weight (400) reflects Japan's elegant, restrained approach */
     font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 2px;
@@ -437,6 +453,7 @@ main {
     gap: 4rem;
     align-items: start;
     padding: 4rem 0 3rem;
+    /* Thinner border (0.5px) reflects restraint and simplicity (wabi-sabi) */
     border-bottom: 0.5px solid var(--line);
 }
 
@@ -447,8 +464,8 @@ main {
 
 .artist-page-photo {
     width: 100%;
+    /* Sharp corners (0px border-radius) consistent with Japanese design precision (Uncertainty Avoidance) */
     border-radius: 0;
-    /* sharp corners */
     aspect-ratio: 1;
     object-fit: cover;
 }
@@ -459,14 +476,17 @@ main {
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 0.75rem;
+    /* Light weight (300) reflects Japan's elegant, restrained typography approach */
     font-weight: 300;
 }
 
 .artist-page-name {
     font-family: 'Noto Serif JP', serif;
     font-size: clamp(2.5rem, 4vw, 3.75rem);
+    /* Lighter font weight (400) reflects Japan's elegant, restrained design culture */
     font-weight: 400;
     line-height: 1.05;
+    /* Wider letter-spacing incorporates 'ma' principle of meaningful empty space */
     letter-spacing: 0.1em;
     margin-bottom: 2rem;
     color: var(--text);
@@ -474,10 +494,11 @@ main {
 
 .artist-page-story {
     font-size: 1rem;
+    /* Generous line-height (2) incorporates 'ma' principle; creates meditative, spacious feel (Individualism vs. Collectivism) */
     line-height: 2;
-    /* generous — meditative feel */
     color: var(--text-mid);
     max-width: 64ch;
+    /* Light weight (300) reflects Japan's restrained, understated aesthetic */
     font-weight: 300;
 }
 
@@ -497,6 +518,7 @@ main {
 .artist-page-divider::after {
     content: '';
     flex: 1;
+    /* Thinner divider line (0.5px) reflects wabi-sabi principle of restraint and minimalism (Indulgence vs. Restraint) */
     height: 0.5px;
     /* very thin divider lines */
     background: var(--line);
@@ -907,7 +929,7 @@ Japan Index
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--line);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* content */
@@ -974,26 +996,26 @@ Japan Index
 
 /* --- Featured Preview (homepage) — ja_JP tweaks --- */
 /* Use CJK-friendly font choices and slightly taller line-height for readability */
-.intro + .page-section .gallery {
+.intro+.page-section .gallery {
     gap: 1.1rem;
 }
 
 /* Make cards a little taller and increase vertical rhythm for Japanese text */
-.intro + .page-section .gallery .gallery-item {
+.intro+.page-section .gallery .gallery-item {
     padding: 0.9rem;
     border-radius: calc(var(--radius) + 1px);
-    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,247,244,0.98));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 244, 0.98));
 }
 
 /* CJK font stacks for names and copy (falls back to system CJK fonts) */
-.intro + .page-section .gallery .catalog-artist-name {
+.intro+.page-section .gallery .catalog-artist-name {
     font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
     font-size: 0.96rem;
     color: var(--text-mid);
 }
 
 /* Slightly larger description text and improved line-height for CJK */
-.intro + .page-section .gallery .gallery-item p.mb-0 {
+.intro+.page-section .gallery .gallery-item p.mb-0 {
     font-family: "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
     font-size: 0.99rem;
     line-height: 1.95;
@@ -1003,6 +1025,6 @@ Japan Index
 }
 
 /* Hover emphasis matches site tone */
-.intro + .page-section .gallery .gallery-item:hover .catalog-artist-name {
+.intro+.page-section .gallery .gallery-item:hover .catalog-artist-name {
     color: var(--text);
 }

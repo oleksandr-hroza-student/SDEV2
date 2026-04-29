@@ -26,7 +26,9 @@
 
     --accent: #3a2e28;
     --gold: #b5472a;
-    /* terracotta-red — replaces brown-gold */
+    /* Red accent symbolizes luck and prosperity in Chinese culture (Uncertainty Avoidance: culturally familiar symbols reduce ambiguity and create immediate recognition) */
+    /* Replaces gold from base version */
+    /* terracotta-red — culturally appropriate accent color */
     --white: #fffdf9;
 
     --radius: 4px;
@@ -41,6 +43,7 @@
 body {
     background: var(--bg);
     color: var(--text);
+    /* Font supports Chinese characters with formal, structured stroke style (Power Distance: formal, authoritative typography) */
     font-family: 'Noto Serif SC', serif;
     line-height: 1.65;
 }
@@ -62,8 +65,8 @@ a {
 .site-heading-upper {
     font-family: 'Noto Serif SC', serif;
     font-size: 0.75rem;
+    /* Wider letter-spacing reflects formal Chinese typography; generous spacing conveys authority (Power Distance: signals formality and seriousness) */
     letter-spacing: 0.22em;
-    /* wider — more formal */
     text-transform: uppercase;
     color: var(--gold);
     display: block;
@@ -72,8 +75,8 @@ a {
 .site-heading-lower {
     font-family: 'Noto Serif SC', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    /* Heavier font weight mirrors bold, confident visual weight of Chinese characters (Power Distance: bold, commanding visuals reinforce formal and hierarchical tone) */
     font-weight: 700;
-    /* bolder heading */
     color: var(--text);
     letter-spacing: 0.06em;
 }
@@ -209,8 +212,8 @@ main {
 
 .footer {
     background: var(--bg);
+    /* Double-line borders reflect traditional Chinese decorative framing conventions */
     border-top: 3px double var(--line);
-    /* double line — lacquerware feel */
     color: var(--text-mid);
 }
 
@@ -232,13 +235,14 @@ main {
     max-width: var(--max-w);
     margin: 4rem auto 3rem;
     padding: 0 2rem 2rem;
+    /* Double-line borders like most Chinese decorative framing traditions */
     border-bottom: 3px double var(--line);
-    /* double border */
 }
 
 .page-title {
     font-family: 'Noto Serif SC', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    /* Heavier font weight (700) mirrors bold, confident visual weight of Chinese characters and formal signage (Power Distance: bold, commanding visuals) */
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.04em;
@@ -273,6 +277,8 @@ main {
     background: var(--bg-warm);
     aspect-ratio: 4 / 5;
     border: 1px solid var(--line);
+    /* Box-shadow added to mimic Chinese woodblock printing aesthetic (artistic heritage) */
+    box-shadow: 4px 4px 0 var(--gold);
 }
 
 .catalog-img {
@@ -431,8 +437,8 @@ main {
     gap: 4rem;
     align-items: start;
     padding: 4rem 0 3rem;
+    /* Double-line borders reflect traditional Chinese decorative framing conventions */
     border-bottom: 3px double var(--line);
-    /* double border */
 }
 
 .artist-page-photo-wrap {
@@ -445,8 +451,8 @@ main {
     border-radius: var(--radius);
     aspect-ratio: 1;
     object-fit: cover;
+    /* Red accent frame symbolizes luck and prosperity in Chinese culture */
     border: 2px solid var(--gold);
-    /* red accent frame */
 }
 
 .artist-page-label {
@@ -460,8 +466,10 @@ main {
 .artist-page-name {
     font-family: 'Noto Serif SC', serif;
     font-size: clamp(2.5rem, 4vw, 3.75rem);
+    /* Heavier font weight (700) reinforces formal and hierarchical tone expected in professional Chinese contexts (Power Distance) */
     font-weight: 700;
     line-height: 1.05;
+    /* Wider letter-spacing signals formality and seriousness (Power Distance: generous spacing aligns with high power distance expectations) */
     letter-spacing: 0.06em;
     margin-bottom: 2rem;
     color: var(--text);
@@ -511,8 +519,8 @@ main {
 
 .artist-work-card:hover {
     transform: translateY(-4px);
+    /* Box-shadow mimics Chinese woodblock printing aesthetic; offset shadow echoes the artistic heritage of China (artistic tradition as cultural expression) */
     box-shadow: 4px 4px 0 var(--gold);
-    /* offset shadow in accent colour */
 }
 
 .artist-work-img {
@@ -597,8 +605,8 @@ main {
 .painting-main-img {
     width: 100%;
     border-radius: var(--radius);
+    /* Box-shadow mimics Chinese woodblock printing aesthetic; offset shadow creates visual depth echoing traditional Chinese artistic techniques */
     box-shadow: 6px 6px 0 var(--gold);
-    /* hard offset shadow */
     background: var(--bg-warm);
     border: 1px solid var(--line);
 }
@@ -759,8 +767,8 @@ main {
 }
 
 .event-card:hover {
+    /* Box-shadow mimics Chinese woodblock printing aesthetic; offset shadow applies consistently to interactive elements */
     box-shadow: 4px 4px 0 var(--gold);
-    /* hard offset shadow on hover */
 }
 
 .event-highlight {
@@ -885,7 +893,7 @@ Index china
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--line);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* content */
