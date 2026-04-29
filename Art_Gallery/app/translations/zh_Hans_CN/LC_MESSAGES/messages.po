@@ -756,12 +756,12 @@ msgstr "艺术作品集"
 #: app/templates/submit.html:64 app/templates/submit.html:77
 #: app/templates/submit.html:129
 msgid "Choose file"
-msgstr ""
+msgstr "选择文件"
 
 #: app/templates/submit.html:66 app/templates/submit.html:79
 #: app/templates/submit.html:131
 msgid "No file chosen"
-msgstr ""
+msgstr "未选择文件"
 
 #: app/templates/submit.html:68
 msgid ""

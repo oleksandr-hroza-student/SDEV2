@@ -426,15 +426,15 @@ msgstr "ソーシャルメディア"
 
 #: app/templates/contact.html:71
 msgid "Instagram"
-msgstr "Instagram"
+msgstr "インスタグラム"
 
 #: app/templates/contact.html:72
 msgid "Facebook"
-msgstr "Facebook"
+msgstr "フェイスブック"
 
 #: app/templates/contact.html:73
 msgid "LinkedIn"
-msgstr "LinkedIn"
+msgstr "リンクトイン"
 
 #: app/templates/contact.html:81
 msgid "Helpful Resources"
@@ -755,12 +755,12 @@ msgstr "作品ポートフォリオ"
 #: app/templates/submit.html:64 app/templates/submit.html:77
 #: app/templates/submit.html:129
 msgid "Choose file"
-msgstr ""
+msgstr "ファイルを選択してください"
 
 #: app/templates/submit.html:66 app/templates/submit.html:79
 #: app/templates/submit.html:131
 msgid "No file chosen"
-msgstr ""
+msgstr "ファイルが選択されていません"
 
 #: app/templates/submit.html:68
 msgid ""
