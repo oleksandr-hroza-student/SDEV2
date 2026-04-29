@@ -2,6 +2,33 @@
 This is our SDEV group project
 
 ******************************************************************************************************************************************************************
+Group 
+
+Project Overview and target area: Global Art Gallery — a digital platform to explore, view, and submit artworks across cultures. Users: artists, enthusiasts, collectors, and cultural professionals.
+
+Cultural Scope: English / Mandarin / Japanese. Ireland (high IDV, low PD), China (low IDV, high PD), Japan (moderate IDV, moderate PD). Dimensions: Hofstede’s Individualism vs Collectivism and Power Distance.
+
+Design Rationale: Three PoV statements (Zhang Ming — formal/prestige; Brian — open submission; Kenji — restrained credibility). Three hypotheses: artist bios improve engagement; tiered navigation raises task completion; labelled mediums boost artist confidence.
+
+Architecture and Structure Overview: Flask app on Render. Shared base.html with block inheritance. Routes: /, /gallery, /painting/<slug>, /artist/<slug>, /events, /submit, /contact. Language switching via /set_language/<locale>, persisted in session.
+
+Internationalisation and Localisation Strategy: Flask-Babel; translation files for en_IE, zh_CN, ja_JP. All user-facing strings wrapped in translation functions. Language switcher in nav bar (base.html), selection stored in session.
+
+Cultural Adaptation Mechanisms: Language — full UI translation across all pages. Tone — formal throughout; no casual or promotional copy. Layout — whitespace-heavy with artist bios prominent on the home page (depth for collectivist users, clarity for Irish). Navigation — curated pathways + open browsing to serve both structured and autonomous expectations. Artwork pages — medium, dimensions, year, description, and artist link on every entry. Colour — neutral whites/blacks/muted tones; red and white-dominant schemes deliberately avoided due to cultural connotations in China and Japan.
+
+
+
+Individual contributions:
+Oleksandr Hroza, C24737185
+Subsections:
+1.	Home page (Html, CSS, Fully working translations & changing UI based on the language)
+Cultural dimensions: Collectivism vs individualism, Low vs High power distance.
+Hypothesis implemented: Implementing the artist biography/statement that connect individual stories to the broader cultural context for all users will result in stronger engagement across the three markets.
+
+A personal statement from one of the artists appears on the home page, between featured works and overview of events. 
+
+
+
 Contributions made by Roshan Kadhiwala [D24125279]
 
 Pages / Features Implemented
