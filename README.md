@@ -119,17 +119,25 @@ Implemented the [art.html, artists.html, events.html, base.html, gallery.html, a
 
  **Chinese UI Changes:**
 Font was changed to one that supports Chinese characters and has the formal, structured stroke style of traditional Chinese print. (Power Distance: formal, authoritative typography reflects China's high power distance culture, where hierarchy and formality are visually communicated.)
+
 Switched to a Red accent (from gold) red symbolizes luck and prosperity in Chinese culture, making it the most culturally appropriate accent color. (Uncertainty Avoidance: using culturally familiar symbols like red reduces ambiguity and creates immediate cultural recognition for the user.)
+
 Heavier font weight that mirrors the bold, confident visual weight of Chinese characters and formal Chinese signage. (Power Distance: bold, commanding visuals reinforce the formal and hierarchical tone expected in professional Chinese contexts.)
 Wider letter-spacing that reflects how formal Chinese typography spaces characters generously to convey authority. (Power Distance:  generous spacing signals formality and seriousness, aligning with high power distance expectations.)
+
 Double-line borders like most Chinese decorative framing traditions. 
+
 Added a box-shadow because it appeared in a few Chinese galleries (and I honestly thought it looked nice), after investigating it was found that this is done to mimic Chinese woodblock printing, so it was decided to keep it as a part only for Chinese translation. 
 
 **Japanese UI Changes:**
 Font was changed to one that supports Japanese characters and has a noticeably lighter, more elegant stroke than the Chinese variant. (Indulgence vs. Restraint:  the lighter stroke reflects Japan's restrained, understated design culture.)
+
 More line weight + more line-height, reflects ma, the Japanese concept of meaningful empty space and airiness in composition, while our design already somewhat applied this principle as we decided to go for a more minimalist design we found it was still possible to apply "ma". (in essence making our design more minimalistic than it already is). (Individualism vs. Collectivism:  ma as a design principle reflects a collective cultural understanding that silence and space carry meaning, not just content.)
+
 Radius decreased to 0px, the sharp corners are a consistent feature of Japanese design across architecture, print and product design. (Uncertainty Avoidance:  precise, defined edges reflect Japan's high uncertainty avoidance, favoring clarity and exactness over ambiguity.)
+
 Thinned out the borders, the new thinner borders reflect the Japanese value of restraint and understatement (wabi-sabi). (Indulgence vs. Restraint:  thinner borders embody wabi-sabi, the acceptance of impermanence and simplicity over decoration.)
+
 Changed it to a blue accent (from gold) the blue accent is similar to the blue-grey tone of sumi ink used in Japanese calligraphy and ink wash painting.
 
 
